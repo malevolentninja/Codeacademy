@@ -1,0 +1,405 @@
+**# Introducing jQuery**
+## **See It to Believe It**
+$(document).ready(function() {
+   $('div').mouseenter(function() {
+       $(this).animate({
+           height: '+=10px'
+       });
+   });
+   $('div').mouseleave(function() {
+       $(this).animate({
+           height: '-=10px'
+       }); 
+   });
+   $('div').click(function() {
+       $(this).toggle(1000);
+   }); 
+});
+
+## **2. The Document Object Model**
+$(document).ready(function() {
+    $( 'div' ).fadeOut(1000);
+});
+
+**## 3. Changing Targets** 
+
+$(document).ready(function() {
+    $('#green').fadeOut(1000);
+});
+
+**## 4.What is jQuery?**
+$(document).ready(function() {
+    $('#notready').fadeOut(1000);
+});
+
+**## 5. Linking Your HTML and Javascript Files**
+$(document).ready(function(){
+
+
+});
+
+**## 6. Getting Started**
+$(document).ready();
+
+
+});
+
+**## 7. The Functional Approach**
+$(document).ready(function()){}
+    jQuery magic;
+
+
+});
+
+**## 8.Electr(on)ic Slide**
+$(document).ready(function()){}
+    jQuery magic;
+
+});
+
+**## 9.Mid Lesson Breather**
+Great work! We've covered a lot so far. Let's take a second to review what we've learned:
+- What jQuery is and how it can manipulate HTML elements
+- jQuery syntax
+
+**## 10.At the Ready!**
+$(document).ready(){
+});
+
+**## 11.Get Yourself In...**
+$ (document).ready(function() {
+    $('div').fadeTo('fast',1);
+});
+
+**## 12....And Get Yourself Out!**
+$ (document).ready(function() {
+    $('div').mousenter();
+        $('div').mouseleave();
+    $('div').fadeTo('fast',0.5);
+
+});
+
+**## 13.Eureka!**
+
+$ (document).ready(function() {
+
+        $('div').mouseleave();
+    $('div').fadeTo('fast',0.5);
+
+});
+
+ **#jQuery Functions**
+**## Functions, Part I: $(document).read**
+
+$ (document).ready(function(){
+  $('div').hide()  
+};
+
+## **Functions, Part II: Functions Explained**
+$(document).ready(function() {
+    $('div').click(function() {
+        $('div').fadeOut('slow');
+    });
+});
+
+**## 3. Variables**
+// Write your jQuery code on line 3!
+$(document).ready(function() {
+var $target= $('ol li:nth-child(4)');
+
+    $target.fadeOut('fast');
+});
+
+**## 4. $p vs $('p')**
+// Write your jQuery code below!
+
+  var $div = $('div');
+    
+    
+**## 5.Using Functions to Select HTML Elements**
+$(document).ready(function){
+    $('div').fadeIn('slow');
+});
+
+**##6. Selecting by Class**
+$(document).ready(function() {
+    $('button').click(function() {
+       $('.vanish').fadeOut('slow') 
+    });
+});
+
+**##7. Selecting by ID**
+$(document).ready(function() {
+    $('button').click(function() {
+        $('#blue').fadeOut('slow');
+    });
+});
+
+**## 8.Flexible Selections**
+$(document).ready(function(){
+   $('.pink,.red').fadeTo('slow',0);
+  
+});
+
+**##9. 'this' is Important!**
+$(document).ready(function() {
+    $('div').click(function() {
+        $(this).fadeOut('slow');
+    });
+});
+
+**##10. Ready?**
+$(document).ready(){
+        
+});
+
+**##11. Click and Pull**
+$(document).ready(function(){
+    $('.pull-me').click();
+        
+});
+
+**## 12. Toggling Our Panel**
+$(document).ready(function(){
+    $('.pull-me').click(function('.panel'){
+        $('elem').slideToggle('slow')
+    
+    });
+    
+});
+
+**## 13. Well Done!**
+$(document).ready(function(){
+    $('.pull-me').click(function('.panel'){
+        $('elem').slideToggle('slow')
+  
+    });
+      
+});
+
+ **# Creating HTML Elements**
+$h1 = $("<h1>Hello</h1>");
+
+**##2. Inserting Elements**
+$(document).ready(function() {
+$("body").append("<p>I'm a paragraph!</p>");
+
+});
+
+
+**## 3. Before and After**
+$(document).ready function {
+    $("#one").after("<p>bleh </p>");
+    $("#one").after("<p>wub wub</p>");
+    
+});
+
+
+**##4. Moving Elements Around**
+$(document).ready(function() {
+  
+    $('#two').after($('p'));    
+});
+
+**## 5.Removing Elements**
+$(document).ready(function() {
+  
+    $("#two").after($('p'));    
+    $("p").remove();
+});
+
+**##6. Adding and Removing Classes**
+$(document).ready(function() {
+$("#text").click(function() {
+$(this).addClass("highlighted");
+});
+});
+
+
+**##7. Toggling Classes**
+
+$(document).ready(function() {
+$("#text").click(function() {
+$(this).toggleClass("highlighted");
+});
+});
+
+
+## **8.Changing Your Style**
+$(document).ready(function() {
+ $('div').height('200px').width('200px').css('border-radius','10px');
+});
+    
+}
+
+**## 9.Modifying Content**
+$(document).ready(function() {
+    $('p').html("jQuery magic in action!"); 
+});
+
+**## 10.Set Up**
+$(document).ready (function() {
+    
+});
+
+**## 11.Click Da Button! Do It Naoughw!**
+
+$(document).ready (function() {
+    $("#button").click (function() {
+        var toAdd = $("input[name=checkListItem]").val();
+    }
+    
+    
+});
+
+**## 12.Append to Body**
+$(function(){
+    $('#button').click(function(){
+       var toAdd  =$('input[name=checkListItem]').val();
+       $('.list').append("<div class='item'>"+ toAdd +"</div>");
+    });
+});
+
+
+**##13. Remove What's Been Clicked**
+$(function(){
+    $('#button').click(function(){
+       var toAdd  =$('input[name=checkListItem]').val();
+       $('.list').append("<div class='item'>"+ toAdd +"</div>");
+    });
+    
+
+**## 14. You Did It!**
+$(document).ready (function(){
+    $('#button').click(function(){
+       var toAdd  =$('input[name=checkListItem]').val();
+       $('.list').append("<div class='item'>"+ toAdd +"</div>");
+    });
+    
+    
+
+**# . Review of jQuery Events**
+
+$(document).ready(function() {
+    $('button').click(function() {
+        var toAdd = $("input[name=message]").val();
+        $('#messages').append("<p>"+toAdd+"</p>");
+    });
+});
+## **2. Cutting to the Chase**
+
+$(document).ready(function() {
+    $('div').fadeOut('fast');    
+});
+## **3. Adding an Event Handler**
+
+$(document).ready(function() {
+    $('div').click(function() {
+        $(this).fadeOut('fast')    
+    });    
+});
+
+## **4. Combining .click() and .hover()**
+
+$(document).ready(function() {
+    $('div').click(function() {
+        $(this).fadeOut('fast')    
+    });
+    $('div').hover(function() {
+        $(this).addClass('red');    
+    });
+});
+## **5. The .dblclick() Event**
+
+$(document).ready(function() {
+    $('div').dblclick(function() {
+        $(this).fadeOut('fast');    
+    });    
+});
+
+## **6. Hover**
+
+$(document).ready(function(){
+
+  $('div').hover(function() {
+        $(this).addClass('active');
+    }, function() {
+        $(this).removeClass('active');    
+    }
+  );
+
+});
+## **7. Let's .focus()!**
+
+$(document).ready(function() {
+    $('input').focus(function() {
+        $('input').css('outline-color', '#FF0000');    
+    });    
+});
+## **8. The .keydown() Event**
+
+$(document).ready(function() {
+    $(document).keydown(function() {
+        $('div').animate({left: '+=10px'}, 500);
+    });    
+});
+## **9. Getting Ready**
+
+$(document).ready(function() {
+
+});
+## **10. Using .keydown()**
+
+$(document).ready(function() {
+    $(document).keydown(function(key) {
+
+    });    
+});
+## **11. Filling Out the Cases**
+
+$(document).ready(function() {
+    $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+            // Left arrow key pressed
+            case 37:
+                $('img').animate({left: "-=10px"}, 'fast');
+                break;
+            // Up Arrow Pressed
+            case 38:
+                $('img').animate({top: "-=10px"}, 'fast');
+                break;
+            // Right Arrow Pressed
+            case 39:
+                $('img').animate({left: "+=10px"}, 'fast');
+                break;
+            // Down Arrow Pressed
+            case 40:
+                $('img').animate({top: "+=10px"}, 'fast');
+                break;
+        }
+    });
+});
+**## 12. You Did It!**
+
+$(document).ready(function() {
+    $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+            // Left arrow key pressed
+            case 37:
+                $('img').animate({left: "-=10px"}, 'fast');
+                break;
+            // Up Arrow Pressed
+            case 38:
+                $('img').animate({top: "-=10px"}, 'fast');
+                break;
+            // Right Arrow Pressed
+            case 39:
+                $('img').animate({left: "+=10px"}, 'fast');
+                break;
+            // Down Arrow Pressed
+            case 40:
+                $('img').animate({top: "+=10px"}, 'fast');
+                break;
+        }
+    });
+});
