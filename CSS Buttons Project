@@ -1,0 +1,66 @@
+Project: CSS Buttons
+
+1.What you'll be building
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+    </head>
+    <body>
+        <div id="orange"><br/>Submit!</div>
+        <div id="green">âœ“</div>
+        <div id="red">X</div>
+    </body>
+</html>
+
+
+2. Create a <div>
+Add <div> to index.html:
+ <div></div>
+
+
+3. Set the size
+Stylesheet.css tab give <div> a height and width:
+div {
+    height:30px;
+    width:30px;
+}
+
+
+4. Give it a Border
+<div> a border of any type, suggested 4px solid black:
+div {
+    border: 4px solid black;
+}
+
+
+5. Add some Text
+Add some text in between <div> </div> tags.
+ <div> This is the start of something new.</div>
+
+
+
+6. Color it in
+Give your <div> whatever background-color you like!
+Change the font and border colours too!
+div {
+    border: 10px dashed black;
+    background-color: blue;
+    font: Helvetica;
+}
+
+
+7. Drop shadow like it's hot
+The box-shadow property can take a comma-separated list of shadows, each defined by 2 - 4 length values (which specify the horizontal offset, vertical offset, optional blur distance and optional spread distance of the shadow), an optional color value, and an optional "inset" keyword that makes an inner shadow instead of the default outer shadow.
+Give your button a box-shadow with whatever values you like!
+div {
+    border: 10px dashed black;
+    background-color: blue;
+    box-shadow: 10px 5px 10px #888;
+
+}
+
+
+8. Go Nuts
+To add functionality to your buttons, you'll need to know a little JavaScript. Once you combine HTML, CSS, and JavaScript, you can move on to more complex projects, such as validating web forms or building an on-line store!
