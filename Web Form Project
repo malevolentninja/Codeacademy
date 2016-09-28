@@ -1,0 +1,201 @@
+Web Form Project
+
+
+1. What you'll be building
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Form</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="header"><h1>Contact Us!</h1></div>
+        <div id="wrapper">
+            <div id="inputs">
+                <form name="input" action="#" method="post">
+                    First name: <input type="text" name="firstname" value="first name"><br/>
+                    Last name: <input type="text" name="lastname" value="last name"><br/>
+                    E-mail: <input type="email" name="email" value="e-mail address"><br/><br/>
+                </form>
+            </div>
+            <div>
+                <form id="options">
+                    Message: <br/><textarea name="msg"></textarea><br/>
+                    <p>Sex:</p>
+                    <input type="radio" name="sex" value="male">Male
+                    <input type="radio" name="sex" value="female">Female<br/><br/>
+                    <input type="checkbox" name="notify" value="updates" checked>I'd like to receive notices when this website updates.<br/>
+                    <input type="checkbox" name="notify" value="services">I'd like to receive notices pertaining to related websites and their services.<br/><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+2. The Basic Form
+<form> element contains <input> elements of varying types. There are no </input> tags. Javascaript can use name attribute to target individual input fields.
+Add a <form> element to index.html, and include two <input>s inside it. Both <input>s should be of type="text". You can give them whatever names and default values you like!
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="name" value="name">
+            <input type="text" name="email" value="email">
+</form>
+
+    </body>
+</html>
+
+
+3. Adding a little extra area
+take a quick detour through the <textarea> element, = creates a resizable text box in which we can allow the user to write a longer message.
+Add a <textarea> to your HTML page:
+
+<textarea></textarea>
+
+
+4. Radio buttons
+two <input> fields and a <textarea>, we could easily imagine a setup where users could post comments with their first name, last name, and the text of their message.
+Radio buttons are another type of <input>.
+Between your <form></form> tags, add two radio buttons. You don't need to give them name or value attributes, but you certainly can if you'd like to practice. Go ahead and give them whatever labels you like!
+    <form>
+        <input type="text" name="name" value="name">
+        <input type="text" name="email" value="email">
+        <input type="radio"> Yes
+        <input type="radio"> No
+</form>
+
+
+5. Checkboxes
+What about non-exclusive options e.g. a list of five options and we want the user to pick all that apply. Checkboxes are the answer, another type of <input>. In addition to names and values, checkboxes can have a default "checked" behavior that makes the box automatically checked when the user loads the page. A typical example is pizza:
+<p>Pizza toppings</p>
+<p>(Check all that apply)</p>
+<input type='checkbox' checked>Cheese
+<input type='checkbox'>Mushrooms
+<input type='checkbox'>Pepperoni
+Go ahead and add two checkboxes between your <form></form> tags. Make at least one checked by default!
+    <form>
+        <input type="checkbox" checked>  subscribe
+        <input type="checkbox"> correct
+        <input type="text" name="name" value="name">
+        <input type="text" name="email" value="email">
+        <input type="radio"> Yes
+        <input type="radio"> No
+</form>
+
+
+6. Submit!
+One more <input> element type which should be added is the submit button.
+Between your <form></form> tags, add an <input> of type='submit'.
+    <form>
+        <input type="checkbox" checked>  subscribe
+        <input type="checkbox"> correct
+        <input type="text" name="name" value="name">
+        <input type="text" name="email" value="email">
+        <input type="radio"> Yes
+        <input type="radio"> No
+        <input type="submit">
+</form>
+
+
+7. Style: The Extra mile
+orm is a little plain, however, so you may want to style it with CSS.
+When you're done styling your form, click Save & Submit Code to finish this project.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Form</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="header"><h1>Contact Us!</h1></div>
+        <div id="wrapper">
+            <div id="inputs">
+                <form name="input" action="#" method="post">
+                    First name: <input type="text" name="firstname" value="first name"><br/>
+                    Last name: <input type="text" name="lastname" value="last name"><br/>
+                    E-mail: <input type="email" name="email" value="e-mail address"><br/><br/>
+                </form>
+            </div>
+            <div>
+                <form id="options">
+                    Message: <br/><textarea name="msg"></textarea><br/>
+                    <p>Sex:</p>
+                    <input type="radio" name="sex" value="male">Male
+                    <input type="radio" name="sex" value="female">Female<br/><br/>
+                    <input type="checkbox" name="notify" value="updates" checked>I'd like to receive notices when this website updates.<br/>
+                    <input type="checkbox" name="notify" value="services">I'd like to receive notices pertaining to related websites and their services.<br/><br/>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+CSS Section 
+#header {
+    position: relative;
+    top: -10px;
+    background-color: #00A0B0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 40px;
+}
+
+h1 {
+    font-family: Lobster;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+form {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+p {
+    font-family: Verdana, Arial, sans-serif;
+    display: inline-block;
+}
+
+input {
+    font-family: Verdana, Arial, sans-serif;
+    color: #777;
+}
+
+textarea {
+    vertical-align: top;
+    width: 400px;
+    color: #777;
+}
+
+#wrapper {
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    position: relative;
+    top: -10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 3px #444;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8em;
+}
+
+#inputs {
+    width: 200px;
+    clear: both;
+}
+
+#inputs input {
+    width: 100%;
+    clear: both;
+}
+
+jquery and javascript will help make the form functional!
