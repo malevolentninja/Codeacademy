@@ -1,1 +1,43 @@
-Subqueries
+1. Table Tansformation
+
+SELECT * FROM flights
+LIMIT 10;
+
+2. Non-Correlated Subqueries I
+
+
+SELECT * FROM flights
+WHERE origin in (
+	SELECT code 
+  FROM airports
+  WHERE elevation < 2000);
+  
+3. Non-Correlated Subqueries II
+
+SELECT * 
+FROM flights 
+WHERE origin in (
+    SELECT code 
+    FROM airports 
+    WHERE faa_region = 'ASO');
+    
+ 4. Non-Correlated Subqueries III
+SELECT a.dep_month,
+a.dep_day_of_week,
+AVG(a.flight_distance) AS average_distance 
+FROM (
+SELECT dep_month,
+dep_day_of_week, 
+dep_date,
+SUM(distance) AS flight_distance
+FROM flights
+GROUP BY 1,2,3
+) a
+GROUP BY 1,2
+ORDER BY 1,2;
+
+5. Correlated Subqueries I
+
+6. Correlated Subqueries II
+
+7. Generalisations
