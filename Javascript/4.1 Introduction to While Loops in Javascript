@@ -47,12 +47,14 @@ loop();
 
 6. Solo flight
 
-var swag = true;
+//Remember to make your condition true outside the loop!
+var a = true;
 var soloLoop = function(){
-  while(swag === true) {
-      console.log("Looped once!");
-      swag = false;
-  }
+while (a) {
+console.log ("Looped once!");
+a = false;
+};
+
 };
 
 soloLoop();
@@ -63,9 +65,9 @@ soloLoop();
 
 8. When to 'while' and when to 'for'
 
-var count = 1;
+var count = 3;
 
-while(count < 10) {
+while(count < 15) {
     count++;
     console.log("This is a for loop and the count is...");
     console.log("The count is " + count);
@@ -97,7 +99,7 @@ do{
 getToDaChoppa();
 
 11. Review
-
+var count = 1;
 for(var count = 1; count<2;count++) {
     console.log("Hello, world!")
 }
