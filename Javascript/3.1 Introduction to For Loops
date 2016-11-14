@@ -58,7 +58,11 @@ for(var i=100; i>0; i-=5)
 {
  console.log(i);
 }
+
+
 9. Meet arrays
+// You are now declaring an array.
+// Arrays are an awesome data structure!
 
 var junk = ["Bunk","Trunk",4,6];
 console.log(junk)
