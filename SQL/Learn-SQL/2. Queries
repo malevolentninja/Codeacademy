@@ -1,1 +1,76 @@
-Lorem Ipsum
+1. Queries 
+
+SELECT name, imdb_rating
+FROM movies;
+
+2. Select-II
+
+SELECT DISTINCT genre 
+FROM movies;
+
+3. Select Distinct
+
+SELECT * FROM movies
+WHERE imdb_rating > 8;
+
+4. Where
+
+SELECT * FROM movies
+WHERE name
+LIKE 'Se_en';
+
+5. Like-I
+SELECT * FROM movies
+WHERE name LIKE 'a%';
+
+Remove query and type. 
+
+SELECT * FROM movies
+WHERE name LIKE '%man%';
+
+6. Like-II
+SELECT * FROM movies
+WHERE name 
+BETWEEN 'A' AND 'J';
+
+Remove query and type. 
+SELECT * FROM movies
+WHERE year BETWEEN 1990 AND 2000;
+
+7. Between 
+
+SELECT * FROM movies
+WHERE year BETWEEN 1990 AND 2000
+AND genre = 'comedy';
+
+8. And 
+
+SELECT * FROM movies
+WHERE genre = 'comedy'
+OR year < 1980;
+
+
+9. Or
+
+SELECT * FROM movies
+ORDER BY imdb_rating DESC;
+
+10. Order By 
+
+SELECT * FROM movies 
+ORDER BY imdb_rating ASC 
+LIMIT 3;
+
+11. Limit 
+Learned how to use SQL to retrieve information from a database. 
+Also learned how to filter queries to make the information more specific and useful. 
+
+12. Generalisations 
+
+SELECT is the clause you use every time you want to query information from a database.
+WHERE is a popular command that lets you filter the results of the query based on conditions that you specify.
+LIKE and BETWEEN are special operators that can be used in a WHERE clause
+AND and OR are special operators that you can use with WHERE to filter the query on two or more conditions.
+ORDER BY lets you sort the results of the query in either ascending or descending order.
+LIMIT lets you specify the maximum number of rows that the query will return. 
+      This is especially important in large tables that have thousands or even millions of rows.
