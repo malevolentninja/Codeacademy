@@ -1,1 +1,134 @@
+Checks a block of text for your name. 
 
+
+
+1. What You'll be Building
+
+/*jshint multistr:true */
+
+text = "Blah blah blah blah blah blah Eric \
+blah blah blah Eric blah blah Eric blah blah \
+blah blah blah blah blah Eric";
+
+var myName = "Eric";
+var hits = [];
+
+// Look for "E" in the text
+for(var i = 0; i < text.length; i++) {
+    if (text[i] === "E") {
+        // If we find it, add characters up to
+        // the length of my name to the array
+        for(var j = i; j < (myName.length + i); j++) {
+            hits.push(text[j]);
+        }
+    }
+}
+
+if (hits.length === 0) {
+    console.log("Your name wasn't found!");
+} else {
+    console.log(hits);
+}
+
+2. Declare your variables
+
+/*jshint multistr:true */
+var text = "Lorem ipsum dolor sit amet. My name is Blondie.";
+var myName = "Blondie";
+var hits = [];
+
+3. Your first "for" loop
+
+/*jshint multistr:true */
+var text = "Lorem ipsum dolor sit amet. My name is Blondie.";
+var myName = "Blondie";
+var hits = [];
+
+for(var i =0;i <= text.length; i++)
+{
+
+}
+
+4. Your "if" statement
+
+/*jshint multistr:true */
+var text = "Lorem ipsum dolor sit amet. My name is Blondie.";
+var myName = "Blondie";
+var hits = [];
+
+for(var i =0;i <= text.length; i++)
+{
+      if (text[i] === myName[0]) {
+        
+    } 
+}
+
+5. Your second "for" loop
+
+/*jshint multistr:true */
+var text = "Lorem ipsum dolor sit amet. My name is Blondie.";
+var myName = "Blondie";
+var hits = [];
+
+for (var i = 0; i < text.length; i++) {
+
+if (text[i] === myName[0]) {
+for (var j=i; j < i + myName.length; j++){
+    hits.push(text[j]);
+}
+      }
+    }
+
+6. Log it!
+
+/*jshint multistr:true */
+
+var text = "Lorem ipsum dolor sit amet. My name is Blondie.";
+
+var myName = "Blondie";
+
+var hits = [];
+
+for (var i = 0; i < text.length; i++) {
+
+    if (text[i] === myName[0]) {
+   for (var j=i; j < i + myName.length; j++){
+    hits.push(text[j]);
+}
+      }
+    }
+    
+if (hits.length = 0) {
+    console.log("Your name was not found")
+}
+
+else {
+    console.log(hits);
+}
+
+
+7. Victory!
+/*jshint multistr:true */
+
+var text = "Lorem ipsum dolor sit amet. My name is Blondie.";
+
+var myName = "Blondie";
+
+var hits = [];
+
+for (var i = 0; i < text.length; i++) {
+
+    if (text[i] === myName[0]) {
+   for (var j=i; j < i + myName.length; j++){
+    hits.push(text[j]);
+}
+      }
+    }
+    
+if (hits.length = 0) {
+    console.log("Your name was not found")
+}
+
+else {
+    console.log(hits);
+}
