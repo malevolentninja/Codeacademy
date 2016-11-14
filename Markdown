@@ -1,0 +1,41 @@
+1. What is markdown?
+
+/* Write your content below this line: #begin#
+
+# Heading 1
+
+## Heading 2
+
+Say something and **bold** then *italic*.
+
+To-Do List:
+
+1. Complete Codecademy courses
+2. Have lunch:
+  - Eat hamburger
+  - Eat chicken leg
+  - Drink coffee
+3. Write some `codes = "great!"`
+
+Famous Quote:
+
+> Edditoria is a noob
+>
+> -- me, 2012
+
+Hyperlink: [Edditoria][]
+
+[edditoria]: http://www.codecademy.com/users/edditoria "My pleasure to contribute to Codecademy community"
+
+#end# Don't touch this line */
+
+2. Write Something
+#begin#
+
+Hellow World, this an example of writing in markdown. 
+
+I will be practiing with the aim of using to improve my github readme pages. 
+
+#end#
+
+3. Format Texts? A piece of Cake!
