@@ -1,15 +1,14 @@
-#Common Use SQL Commands 
+# Codeacademy Structured Query Language course
 
-## ALTER TABLE 
-lets you add columns to a table in a database
+Contains four key areas of work. 
 
-ALTER TABLE table_name ADD column datatype;
+<ul>
+<li> 1. Manipulation </li>
+<li> 2. Queries </li>
+<li> 3. Aggregate Functions </li>
+<li>4. Multiple Tables </li>
+</ul>
 
-## AND
-
-
-## AS
-
-
-## SELECT 
+## I have also created a document containing the common and basic terms used in SQL.  
+I have learnt these throughout the duration of this course. 
 
