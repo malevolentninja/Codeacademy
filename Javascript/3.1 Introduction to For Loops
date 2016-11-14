@@ -64,16 +64,17 @@ for(var i=100; i>0; i-=5)
 // You are now declaring an array.
 // Arrays are an awesome data structure!
 
-var junk = ["Bunk","Trunk",4,6];
+var junk = ["Monk","Thunk",3,9];
 console.log(junk)
 
 10. Array positions
 
 var junkData = ["Eddie Murphy", 49, "peanuts", 31];
 console.log(junkData[3])
-11. Loops and arrays I
 
-var cities = ["Melbourne", "Amman", "Helsinki", "NYC", "Boston", "Chicago"];
+11. Loops and arrays I
+// Let's print out every element of an array using a for loop
+var cities = ["Melbourne", "Amman", "Helsinki", "London", "Paris", "Berlin","Beijing", "NYC"];
 
 for (var i = 0; i < cities.length; i++) {
     console.log("I would like to visit " + cities[i]);
@@ -81,7 +82,7 @@ for (var i = 0; i < cities.length; i++) {
 
 12. Loops and arrays II
 
-var names = ["Steven","Jacob","Brent","Jack","John"];
+var names = ["Jack","Agatha", "Myrtle", "Helen", "Daniel"];
 for(var i=0; i < 5;i++)
 {
     console.log("I know someone called " + names[i])
