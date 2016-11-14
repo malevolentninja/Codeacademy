@@ -1,0 +1,33 @@
+1. Deploying Overview 
+
+
+2. Jekyll: Overview 
+By the end of this unit, you'll have your own Jekyll-generated website ready to deploy.
+Jekyll is a simple static site generator.
+Using Jekyll is a very common way of generating a "ready-to-publish static website" within seconds!
+
+
+3. Installing Jekyll
+
+$gem install jekyll
+
+4. Generate A static Site
+
+$jekyll new personal-website
+
+ls
+
+5. Preview Locally
+
+$cd personal-website
+
+$jekyll serve
+
+6. Jekyll's Directory Structure
+Look at the structure, no Code.
+
+7. Review
+
+Successfully accomplished the first step: using Jekyll to generate a website.
+
+Also used Jekyll commands to preview site along with an overview of how site is structured.
