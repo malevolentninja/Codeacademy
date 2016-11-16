@@ -1,0 +1,110 @@
+1. Why React?
+
+No Code.
+
+2. Hello World
+var h1 = <h1>Hello world</h1>;
+
+3. The Mystery , Revealed
+No Code. 
+
+4. What is JSX? 
+
+No Code.
+
+5. JSX Elements
+<p> Hello World </p>
+
+6. JSX Elements And Their Surroundings
+
+var myArticle =  <article> </article>;
+
+7. Attributes in JSX
+
+var p1 = <p id="large"> foo </p>;
+var p2 = <p id="small">bar </p>;
+
+8. Nested JSX
+
+var myDiv = (
+  
+  <div> 
+    <h1> Hello World </h1>
+  </div>
+  );
+  
+  9. JSX Outer Elements
+  
+  var blog = (
+  <div>
+  <img src="pics/192940u73.jpg" />
+  <h1>
+    Welcome to Dan's Blog!
+  </h1>
+  <article>
+    Wow I had the tastiest sandwich today.  I <strong>literally</strong> almost freaked out.
+  </article>
+    </div>
+);
+
+10. Rendering JSX
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+ReactDOM.render(<h1>Hello world</h1>, document.getElementById('app'));
+
+11. ReactDOM.render()I
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+// Write code here:
+ReactDOM.render(
+<h1>Render me!</h1>
+  document.getElementById('app') 
+  );
+  
+  12. ReactDOM.render()II
+  
+ html
+ <span id="container"></span>
+  
+  Javascript
+  ReactDOM.render(<span id="container"></span>, document.getElementById('container');
+  
+  13. Passing a Variable to ReactDOM.render()
+  
+  var React = require('react');
+var ReactDOM = require('react-dom');
+
+// Write code here:
+var myList = (
+	<ul> 
+    <li> Learn React</li>
+    <li> Continue work on SQL</li>
+    <li> Become a Front end developer </li>
+    <li> Become a database expert</li>
+  
+  </ul>
+
+);
+ReactDOM.render(
+  myList, 
+  document.getElementById('app')
+);
+
+14. The Virtual DOM
+
+var hello = <h1>Hello world</h1>;
+
+// This will add "Hello world" to the screen:
+
+ReactDOM.render(hello, document.getElementById('app'));
+
+// This won't do anything at all:
+
+ReactDOM.render(hello, document.getElementById('app'));
+
+15 JSX recap
+
+First step, learnt to create and render JSX Elements.
