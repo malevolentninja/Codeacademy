@@ -1,0 +1,148 @@
+'While & 'Until Loops
+
+1. The 'While' Loop
+
+counter = 1
+while counter < 11
+  puts counter
+  counter = counter + 1
+end
+
+
+2. Danger: Infinite Loops!
+
+i = 5
+while i < -1
+  puts i
+  i = i + 1
+  
+end
+
+
+3. The 'Until' Loop
+
+counter = 1
+until counter > 10
+  puts counter
+  # Add code to update 'counter' here!
+  counter += 1
+end
+
+
+4. More assignment Operators 
+
+counter = 1
+while counter < 11
+  puts counter
+  counter += 1
+end
+
+'For' Loops
+5. The 'For' Loop
+for num in 1...10
+  puts num
+end
+
+6. Inclusive and Exclusive Ranges
+
+for num in 1..15
+  puts num
+end
+
+7. Building Your Own 
+for num in  1..20
+    puts num
+    
+end
+
+8. The Loop Method 
+i = 20
+loop do
+  i -= 1
+  print "#{i}"
+  break if i <= 0
+end
+
+9. Next!
+
+i = 20
+loop do
+  i -= 1
+  next if i % 2 != 0
+  print "#{i}"
+  break if i <= 0
+end
+
+10. Saving Multiple Values 
+my_array = [1,2,3,4,5]
+
+11. The .each Iterator 
+
+array = [1,2,3,4,5]
+
+array.each do |x|
+  x += 10
+  print "#{x}"
+end
+
+12. Try It Out!
+
+odds = [1,3,5,7,9]
+
+# Add your code below!
+
+
+odds.each do |x|
+  x *= 2
+  print x
+end
+
+13. The.times Iterator
+
+12.times {print "laughing cow!"}
+
+14. Looping with 'While'
+
+q = 0
+while q < 50 do 
+    q += 1
+print "#{q}"  
+end
+
+15. Looping with 'Until'
+
+q = 0
+while q > 50 do 
+    q += 1
+print "#{q}"    
+end
+
+i = 1
+
+until i > 50 do
+   print i
+   i +=1;
+end
+
+16. Looping with 'For' 
+
+for i in (1..50) 
+   print i
+  
+end
+
+17. Loop the Loop with Loop 
+
+counter = 0
+loop do
+  counter += 1
+  print "Ruby!"
+  break if counter >= 30
+end
+
+18. Iterating with .times
+
+30.times do 
+   print "Ruby!"
+   
+end
