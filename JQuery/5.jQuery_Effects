@@ -1,0 +1,537 @@
+1.
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Vanishing Act</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #ABCDEF;
+}
+
+$(document).ready (function();
+    $('div').hide(){
+        
+    }
+}|);
+
+2. More Practice with .animate()
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Going Down</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <img src="http://i1061.photobucket.com/albums/t480/ericqweinstein/elevator.png"/>   
+	</body>
+</html>
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    position: absolute;
+}
+
+$(document).ready(function(){
+
+    // Fill in the blanks!
+  $('img').animate({top:'+=100px'},1000); });
+  
+ 3. Introducing: jQuery UI 
+ 
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Krypton Redux</title>
+		<link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
+
+body {
+    background-image: url('http://bit.ly/UpQgJ6');
+    repeat: no-repeat;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #008800;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003500), to(#008800));
+    background-image: -webkit-linear-gradient(left, #003500, #008800); 
+    background-image:    -moz-linear-gradient(left, #003500, #008800);
+    background-image:     -ms-linear-gradient(left, #003500, #008800);
+    background-image:      -o-linear-gradient(left, #003500, #008800);
+}
+
+$(document).ready (function(){
+   $ ('div').click(function() {
+       $(this).effect('explode');
+       
+       
+   });
+   
+    
+});
+
+4. .bounce()
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Krypton Redux</title>
+		<link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
+
+body {
+    background-image: url('http://bit.ly/UpQgJ6');
+    repeat: no-repeat;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #008800;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003500), to(#008800));
+    background-image: -webkit-linear-gradient(left, #003500, #008800); 
+    background-image:    -moz-linear-gradient(left, #003500, #008800);
+    background-image:     -ms-linear-gradient(left, #003500, #008800);
+    background-image:      -o-linear-gradient(left, #003500, #008800);
+}
+
+$(document).ready (function(){
+   $ ('div').click(function() {
+       $(this).effect('bounce' {times 3},500);
+       
+       
+   });
+   
+    
+});
+
+5. .slide()
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Krypton Redux</title>
+		<link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
+
+body {
+    background-image: url('http://bit.ly/UpQgJ6');
+    repeat: no-repeat;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #008800;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003500), to(#008800));
+    background-image: -webkit-linear-gradient(left, #003500, #008800); 
+    background-image:    -moz-linear-gradient(left, #003500, #008800);
+    background-image:     -ms-linear-gradient(left, #003500, #008800);
+    background-image:      -o-linear-gradient(left, #003500, #008800);
+}
+
+$(document).ready (function(){
+   $ ('div').click(function() {
+       $(this).effect('slide');
+       
+       
+   });
+   
+    
+});
+
+6. Special Effects 
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Behold!</title>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <div id="menu">
+            <h3>jQuery</h3>
+            <div>
+                <p>jQuery is a JavaScript library that makes your websites look absolutely stunning.</p>
+            </div>
+            <h3>jQuery UI</h3>
+            <div>
+                <p>jQuery UI includes even more jQuery goodness!</p>
+            </div>
+            <h3>JavaScript</h3>
+            <div>
+                <p>JavaScript is a programming language used in web browsers, and it's what powers jQuery and jQuery UI. You can learn about JavaScript in the <a href="http://www.codecademy.com/tracks/javascript" target="blank" style="text-decoration:none; color:#F39814">JavaScript track</a> here on Codecademy.</p>
+            </div>
+        </div>
+	</body>
+</html>
+
+$(document).ready(function() {
+    $("#menu").accordion({collapsible: true, active: false});
+});
+
+7. Drag Racing 
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <div id="car">
+            <div id="top"></div>
+            <div id="bottom"></div>
+            <div id="fwheel"></div>
+            <div id="bwheel"></div>
+        </div>   
+	</body>
+</html>
+
+#top {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #cc0000;
+    left: 25px;
+}
+#bottom {
+	position: relative;
+	height:25px;
+	width: 100px;
+	background-color: #cc0000;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	top: -25px;
+}
+#fwheel {
+	position: relative;
+	height:20px;
+	width:20px;
+	border-radius: 100%;
+	background-color: black;
+	top: -35px;
+	left: 5px;
+}
+#bwheel {
+	position: relative;
+	height:20px;
+	width:20px;
+	border-radius: 100%;
+	background-color: black;
+	top: -55px;
+	left: 75px;
+}
+
+$(document).ready (function(){
+   $('#car').draggable(); 
+    
+    
+});
+
+8. One Resize Fits All 
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <div>Resize Me!</div>   
+	</body>
+</html>
+
+div {
+    height: 100px;
+    background-color: #ABCDEF;
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+$(document).ready(function() {    
+    $('div').resizable(); }); 
+    
+9. A Greater Selection 
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Select Ye Favorite</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <ol>
+            <li>Super Mario Bros.</li>
+            <li>Tetris</li>
+            <li>Legend of Zelda: Link's Awakening</li>
+            <li>Kirby's Dream World</li>
+            <li>Burger Time</li>
+            <li>Pokémon Red</li>
+            <li>Pokémon Blue</li>
+        </ol>   
+	</body>
+</html>
+
+ol {
+    list-style-type: none;
+	position: relative;
+	left: -20px;
+}
+
+ol li {
+	background: #eeeeee;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 0.4em;
+	font-size: 1em;
+	height: 16px;
+	font-family: Verdana, Arial, Sans-Serif;
+}
+
+ol .ui-selected {
+	background: #F39814; color: white;
+}
+
+$(document).ready (function() {
+  $('ol').selectable();  
+    
+    
+});
+
+10. Let's Sort Things Out
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Select Ye Favorite</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <ol>
+            <li>Super Mario Bros.</li>
+            <li>Tetris</li>
+            <li>Legend of Zelda: Link's Awakening</li>
+            <li>Kirby's Dream World</li>
+            <li>Burger Time</li>
+            <li>Pokémon Red</li>
+            <li>Pokémon Blue</li>
+        </ol>   
+	</body>
+</html>
+
+ol {
+    list-style-type: none;
+	position: relative;
+	left: -20px;
+}
+
+ol li {
+	background: #eeeeee;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 0.4em;
+	font-size: 1em;
+	height: 16px;
+	font-family: Verdana, Arial, Sans-Serif;
+}
+
+ol .ui-selected {
+	background: #F39814; color: white;
+}
+
+$(document).ready (function() {
+  $('ol').sortable();  
+    
+    
+});
+
+11. jQuery UI, is There Anything You Can't Do?
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title></title>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <div id="menu">
+            <h3>Section 1</h3>
+            <div>
+                <p>I'm the first section!</p>
+            </div>
+            <!--Add two more sections below!-->
+            
+            <h3> Section 2</h3>
+            <div>
+              <p> I'm the second section! </p>
+            </div>
+            <h3> Section 3</h3>
+            <div>
+                <p>I'm the third section! </p>
+            </div>
+            
+        </div>
+	</body>
+</html>
+
+12. At the Ready 
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title></title>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <div id="menu">
+            <h3>Section 1</h3>
+            <div>
+                <p>I'm the first section!</p>
+            </div>
+            <!--Add two more sections below!-->
+            
+            <h3> Section 2</h3>
+            <div>
+              <p> I'm the second section! </p>
+            </div>
+            <h3> Section 3</h3>
+            <div>
+                <p>I'm the third section! </p>
+            </div>
+            
+        </div>
+	</body>
+</html>
+
+$(document).ready();
+
+13. Break Out Your .accordion()!
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title></title>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <div id="menu">
+            <h3>Section 1</h3>
+            <div>
+                <p>I'm the first section!</p>
+            </div>
+            <!--Add two more sections below!-->
+            
+            <h3> Section 2</h3>
+            <div>
+              <p> I'm the second section! </p>
+            </div>
+            <h3> Section 3</h3>
+            <div>
+                <p>I'm the third section! </p>
+            </div>
+            
+        </div>
+	</body>
+</html>
+
+$(document).ready(function(){     
+    $('#menu').accordion();
+    
+    
+}); 
+
+14. Victory!
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title></title>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	</head>
+	<body>
+        <div id="menu">
+            <h3>Section 1</h3>
+            <div>
+                <p>I'm the first section!</p>
+            </div>
+            <!--Add two more sections below!-->
+            
+            <h3> Section 2</h3>
+            <div>
+              <p> I'm the second section! </p>
+            </div>
+            <h3> Section 3</h3>
+            <div>
+                <p>I'm the third section! </p>
+            </div>
+            
+        </div>
+	</body>
+</html>
+
+$(document).ready(function(){     
+    $('#menu').accordion();
+    
+    
+}); 
