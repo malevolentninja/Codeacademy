@@ -1,0 +1,157 @@
+1. Creating Arrays 
+
+my_array = ["toast", "cheese", "potatoe"]
+
+2. Access by Index
+
+demo_array = [100, 200, 300, 400, 500]
+
+print  demo_array[2]
+
+3. Arrays of Non-Numbers
+
+string_array = ["toast", "cheese", "potatoe"]
+
+4. Arrays of Arrays 
+
+multi_d_array = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+
+multi_d_array.each { |x| puts "#{x}\n" }
+
+5. Introduction to Hashes
+
+my_2d_array = [[1000, 3004], ["cabbage", "patch"]]
+
+
+6. Introduction to Hashes
+
+my_hash = { "name" => "Eric",
+  "age" => 26,
+  "hungry?" => true
+}
+
+puts my_hash["name"]
+puts my_hash["age"]
+puts my_hash["hungry?"]
+
+
+7. Using Hash.new 
+
+pets = Hash.new
+
+8. Adding to a Hash
+
+pets = Hash.new
+pets["Homer"] = "cat"
+# Adds the key "Homer" with the
+# value "cat" to the hash
+
+9. Accessing Hash Values 
+
+pets = {
+    "Homer" => "cat",
+    "Bowser" => "turtle",
+    "Igor" => "fish"
+    
+}
+
+puts pets["Homer"] = "cat" # Adds the key "Homer" with the  value "cat" to the hash
+puts pets["Bowser"] = "turtle"
+puts pets["Igor"] = "fish"
+
+11. Iterating Over Arrays 
+
+languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+
+
+10. (Re)Introduction to Iteration
+
+friends = ["Milhouse", "Ralph", "Nelson", "Otto"]
+
+family = { "Homer" => "dad",
+  "Marge" => "mom",
+  "Lisa" => "sister",
+  "Maggie" => "sister",
+  "Abe" => "grandpa",
+  "Santa's Little Helper" => "dog"
+}
+
+friends.each { |x| puts "#{x}" }
+family.each { |x, y| puts "#{x}: #{y}" }
+
+
+11. Iterating over Arrays 
+
+languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+
+puts languages.each { |element| puts element }
+
+
+12. Iterating Over Multidimensional Arrays
+
+
+s = [["ham", "swiss"], ["turkey", "cheddar"], ["roast beef", "gruyere"]]
+
+puts s[0][1]
+
+s.each do |sub_array|
+  sub_array.each do |item|
+    puts item
+  end
+end
+
+13. Iterating over Hashes
+
+secret_identities = {
+  "The Batman" => "Bruce Wayne",
+  "Superman" => "Clark Kent",
+  "Wonder Woman" => "Diana Prince",
+  "Freakazoid" => "Dexter Douglas"
+}
+  
+ Review 
+14. Multidimensional Arrays
+
+my_array = [["Caterpillar", "Butterfly"], ["Superman", "Batman"], [1,3,4]]
+  
+ 15. Hashes
+ 
+ sounds = Hash.new
+sounds["dog"] = "woof"
+sounds["cat"] = "meow"
+
+my_hash = {
+    "chocolate" => 1.00,
+    "candyfloss" => 0.70,
+    "yoghurt" => 1.00
+}
+# I used two different ways of presenting Hash. 
+
+
+16. Iterating Over a Hash
+
+
+lunch_order = {
+  "Ryan" => "wonton soup",
+  "Eric" => "hamburger",
+  "Jimmy" => "sandwich",
+  "Sasha" => "salad",
+  "Cole" => "taco"
+}
+
+lunch_order.each { |name, food| puts food }
+
+ 
+ 
+ 16. Iterating Over a Hash 
+  
+
+
+
+  
+
+
+
+
+
+
