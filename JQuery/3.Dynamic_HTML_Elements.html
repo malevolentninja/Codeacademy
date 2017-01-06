@@ -1,0 +1,428 @@
+1. Creating HTML Elements
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Result</title>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body></body>
+</html>
+
+2. Inserting elements
+
+$(document).ready(function() {
+$("body").append("<p>I'm a paragraph!</p>");
+
+});
+
+3. Before and After 
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Result</title>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div class="container">
+            <h2>Greetings</h2>
+            <div id="one">Div #1</div>
+                <p> wub wub</p>
+            <div id="two">Div #2</div>
+        </div>   
+	</body>
+</html>
+
+$(document).ready function {
+    $("#one").after("<p>bleh </p>");
+    $("#one").after("<p>wub wub</p>");
+    
+});
+
+4. Moving Elements Around 
+
+$(document).ready(function() {
+  
+    $('#two').after($('p'));    
+});
+
+5. Removing Elements
+
+$(document).ready(function() {
+  
+    $("#two").after($('p'));    
+    $("p").remove();
+});
+
+6. Adding and Removing Classes
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Highlights</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div id="title" class="highlighted">I'm highlighted!</div>
+        <div id="text">Highlight me, too!</div>
+	</body>
+</html>
+
+#title {
+    background-color: #C02942;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Verdana, Arial, Sans-Serif;
+    color: #FFFFFF;
+    width: 200px;
+    height: 25px;
+}
+
+#text {
+    background-color: #0B486B;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Vivaldi, Cursive;
+    color: #FFFFFF;
+    width: 200px;
+    height: 25px;
+}
+
+.highlighted {
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px #FFD700;
+    cursor:pointer;
+}
+
+$(document).ready(function() {
+$("#text").click(function() {
+$(this).addClass("highlighted");
+});
+});
+
+
+7. Toggling Classes
+
+$(document).ready(function() {
+$("#text").click(function() {
+$(this).toggleClass("highlighted");
+});
+});
+
+8. Changing Your Style 
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Result</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
+
+div {
+    height: 200px;
+    width: 200px;
+    border-radius:10px;
+    background-color: #2C7CC3;
+}
+
+$(document).ready(function() {
+ $('div').height('200px').width('200px').css('border-radius','10px');
+});
+   
+}
+
+
+9. Modifying Content 
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Result</title>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <p>I'm about to change!</p>   
+	</body>
+</html>
+
+$(document).ready(function() {
+    $('p').html("jQuery magic in action!"); 
+});
+
+10. Set Up
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>To Do</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<h2>To Do</h2>
+		<form name="checkListForm">
+			<input type="text" name="checkListItem"/>
+		</form>
+		<div id="button">Add!</div>
+		<br/>
+		<div class="list"></div>
+	</body>
+</html>
+
+h2 {
+    font-family:arial;
+}
+
+form {
+    display: inline-block;
+}
+
+#button{
+    display: inline-block;
+    height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+
+.list {
+	font-family:garamond;
+	color:#cc0000;
+}
+
+$(document).ready (function() {
+    
+    
+    
+});
+
+11. Click Da Button! Do it Naoughw!
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>To Do</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<h2>To Do</h2>
+		<form name="checkListForm">
+			<input type="text" name="checkListItem"/>
+		</form>
+		<div id="button">Add!</div>
+		<br/>
+		<div class="list"></div>
+	</body>
+</html>
+
+h2 {
+    font-family:arial;
+}
+
+form {
+    display: inline-block;
+}
+
+#button{
+    display: inline-block;
+    height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+
+.list {
+	font-family:garamond;
+	color:#cc0000;
+}
+
+$(document).ready (function() {
+    $("#button").click (function() {
+        var toAdd = $("input[name=checkListItem]").val();
+    }
+ 
+});
+
+12. Append to Body
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>To Do</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<h2>To Do</h2>
+		<form name="checkListForm">
+			<input type="text" name="checkListItem"/>
+		</form>
+		<div id="button">Add!</div>
+		<br/>
+		<div class="list"></div>
+	</body>
+</html>
+h2 {
+    font-family:arial;
+}
+
+form {
+    display: inline-block;
+}
+
+#button{
+    display: inline-block;
+    height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+
+.list {
+	font-family:garamond;
+	color:#cc0000;
+}
+
+$(function(){
+    $('#button').click(function(){
+       var toAdd  =$('input[name=checkListItem]').val();
+       $('.list').append("<div class='item'>"+ toAdd +"</div>");
+    });
+});
+
+13. Remove What's Been Clicked
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>To Do</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<h2>To Do</h2>
+		<form name="checkListForm">
+			<input type="text" name="checkListItem"/>
+		</form>
+		<div id="button">Add!</div>
+		<br/>
+		<div class="list"></div>
+	</body>
+</html>
+h2 {
+    font-family:arial;
+}
+
+form {
+    display: inline-block;
+}
+
+#button{
+    display: inline-block;
+    height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+
+.list {
+	font-family:garamond;
+	color:#cc0000;
+}
+
+$(function(){
+    $('#button').click(function(){
+       var toAdd  =$('input[name=checkListItem]').val();
+       $('.list').append("<div class='item'>"+ toAdd +"</div>");
+    });
+    
+    
+$(document).on('event','selector',(function(){
+    
+});
+});
+
+14. You Did it!
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>To Do</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<h2>To Do</h2>
+		<form name="checkListForm">
+			<input type="text" name="checkListItem"/>
+		</form>
+		<div id="button">Add!</div>
+		<br/>
+		<div class="list"></div>
+	</body>
+</html>
+
+h2 {
+    font-family:arial;
+}
+
+form {
+    display: inline-block;
+}
+
+#button{
+    display: inline-block;
+    height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+
+.list {
+	font-family:garamond;
+	color:#cc0000;
+}
+
+$(document).ready (function(){
+    $('#button').click(function(){
+       var toAdd  =$('input[name=checkListItem]').val();
+       $('.list').append("<div class='item'>"+ toAdd +"</div>");
+    });
+    
+    
+$(document).on('event','selector',(function(){
+    
+});
+});
