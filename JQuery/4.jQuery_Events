@@ -1,0 +1,439 @@
+1. Review of jQuery Events
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Result</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <form>
+        MESSAGE: <input type="text" name="message" value="Type your text here!">
+        </form>
+        <button>Add!</button><br/>
+        <div id="messages"></div>
+	</body>
+</html>
+
+form {
+    font-size: 12px;
+    font-family: Verdana, Arial, Sans-Serif;
+    display: inline-block;
+}
+#messages {
+    font-size: 14px;
+	font-family: Garamond, Times, Serif;
+}
+
+$(document).ready(function() {
+    $('button').click(function() {
+    	var toAdd = $("input[name=message]").val();
+        $('#messages').append("<p>"+toAdd+"</p>");
+    });
+});
+
+
+
+
+2. Cutting to the Chase
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kapow!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
+
+body {
+    background-image: url('http://bit.ly/UpQgJ6');
+    background-repeat: no-repeat;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #008800;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003500), to(#008800));
+    background-image: -webkit-linear-gradient(left, #003500, #008800); 
+    background-image:    -moz-linear-gradient(left, #003500, #008800);
+    background-image:     -ms-linear-gradient(left, #003500, #008800);
+    background-image:      -o-linear-gradient(left, #003500, #008800);
+}
+
+.red {
+    background-color: #CC0000;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#330000), to(#CC0000));
+    background-image: -webkit-linear-gradient(left, #330000, #CC0000); 
+    background-image:    -moz-linear-gradient(left, #330000, #CC0000);
+    background-image:     -ms-linear-gradient(left, #330000, #CC0000);
+    background-image:      -o-linear-gradient(left, #330000, #CC0000);
+}
+
+$(document).ready(function(){
+ $('div').fadeOut('fast');
+});
+
+3. Adding an Event Handler 
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Kapow!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
+
+body {
+    background-image: url('http://bit.ly/UpQgJ6');
+    repeat: no-repeat;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #008800;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003500), to(#008800));
+    background-image: -webkit-linear-gradient(left, #003500, #008800); 
+    background-image:    -moz-linear-gradient(left, #003500, #008800);
+    background-image:     -ms-linear-gradient(left, #003500, #008800);
+    background-image:      -o-linear-gradient(left, #003500, #008800);
+}
+
+.red {
+    background-color: #CC0000;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#330000), to(#CC0000));
+    background-image: -webkit-linear-gradient(left, #330000, #CC0000); 
+    background-image:    -moz-linear-gradient(left, #330000, #CC0000);
+    background-image:     -ms-linear-gradient(left, #330000, #CC0000);
+    background-image:      -o-linear-gradient(left, #330000, #CC0000);
+}
+
+$(document).ready(function() {
+    $('div').click(function() {
+        $(this).fadeOut('fast')    
+    });    
+});
+
+4. Combining.click() and .hover()
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Kapow!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
+
+body {
+    background-image: url('http://bit.ly/UpQgJ6');
+    repeat: no-repeat;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #008800;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003500), to(#008800));
+    background-image: -webkit-linear-gradient(left, #003500, #008800); 
+    background-image:    -moz-linear-gradient(left, #003500, #008800);
+    background-image:     -ms-linear-gradient(left, #003500, #008800);
+    background-image:      -o-linear-gradient(left, #003500, #008800);
+}
+
+.red {
+    background-color: #CC0000;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#330000), to(#CC0000));
+    background-image: -webkit-linear-gradient(left, #330000, #CC0000); 
+    background-image:    -moz-linear-gradient(left, #330000, #CC0000);
+    background-image:     -ms-linear-gradient(left, #330000, #CC0000);
+    background-image:      -o-linear-gradient(left, #330000, #CC0000);
+}
+
+$(document).ready(function() {
+    $('div').click(function() {
+        $(this).fadeOut('fast')    
+    }); 
+    $('div').hover(function() {
+       $('div').addClass('red'); 
+    });
+});
+
+5. The .dblclick() Event
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Dubba Click</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #ABCDEF;
+}
+
+$(document).ready(function() {
+    $('div').dblclick(function() {
+        $(this).fadeOut('fast');    
+    });    
+});
+
+6. Hover
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ghostly Divs</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Contact</div>   
+	</body>
+</html>
+
+div {
+    border-radius: 5px;
+    background-color: #ABCDEF;
+    transition: background-color 0.5s ease;
+    display:inline;
+    font-size:25px;
+    padding:20px;
+    border:1px solid #ccc;
+    margin-top:10px;
+}
+
+.active {
+    background-color:#556677;
+}
+
+$(document).ready(function(){
+
+  $('div').hover(function(){
+    $ (this).addClass('active');
+    },
+    function(){
+    $(this).removeClass('active');
+    }
+  );
+
+});
+
+7. Let's .focus()!
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Time to Focus!</title>
+		<link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+		<script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+		<form>
+			Name: <input type='text' name='name'></input>
+		</form>
+	</body>
+</html>
+
+input {
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
+$(document).ready (function() {
+   $('input').focus(function() {
+    $(this).css('outline-color','#FF0000');
+   
+   }); 
+    
+    
+});
+
+8. The .keydown() Event
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Div Racer</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <div></div>   
+	</body>
+</html>
+
+div {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #FF0000;
+    position: relative;
+}
+
+$(document).ready (function() {
+   $(document).keydown(function() {
+    $('div').animate({left:'+=10px'},500);
+   });   
+    
+});
+
+9. Getting Ready
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Super Mario!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+		<script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <img src="http://i1061.photobucket.com/albums/t480/ericqweinstein/mario.jpg"/>
+	</body>
+</html>
+
+img {
+    position: relative;
+}
+
+$(document).ready (function() {
+    
+    
+    
+});
+
+
+10. Using .keydown()
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Super Mario!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+		<script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <img src="http://i1061.photobucket.com/albums/t480/ericqweinstein/mario.jpg"/>
+	</body>
+</html>
+
+img {
+    position: relative;
+}
+
+$(document).ready (function() {
+    $(document).keydown(function(key) {
+        
+    });   
+});
+
+11. Filing Out the Cases 
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Super Mario!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+		<script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <img src="http://i1061.photobucket.com/albums/t480/ericqweinstein/mario.jpg"/>
+	</body>
+</html>
+
+img {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+$(document).ready(function() {
+    $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+            // Left arrow key pressed
+            case 37:
+                $('img').animate({left: "-=10px"}, 'fast');
+                break;
+            // Up Arrow Pressed
+            case 38:
+                $('img').animate({top: "-=10px"}, 'fast');
+                break;
+            // Right Arrow Pressed
+            case 39:
+                $('img').animate({left: "+=10px"}, 'fast');
+                break;
+            // Down Arrow Pressed
+            case 40:
+                $('img').animate({top: "+=10px"}, 'fast');
+                break;
+        }
+    });
+});
+
+12. You Did It!
+
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Super Mario!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+		<script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+        <img src="http://i1061.photobucket.com/albums/t480/ericqweinstein/mario.jpg"/>
+	</body>
+</html>
+
+img {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+$(document).ready(function() {
+    $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+            // Left arrow key pressed
+            case 37:
+                $('img').animate({left: "-=10px"}, 'fast');
+                break;
+            // Up Arrow Pressed
+            case 38:
+                $('img').animate({top: "-=10px"}, 'fast');
+                break;
+            // Right Arrow Pressed
+            case 39:
+                $('img').animate({left: "+=10px"}, 'fast');
+                break;
+            // Down Arrow Pressed
+            case 40:
+                $('img').animate({top: "+=10px"}, 'fast');
+                break;
+        }
+    });
+});
