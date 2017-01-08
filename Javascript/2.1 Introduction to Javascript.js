@@ -63,7 +63,7 @@ var greeting = function(name)
 greeting("John");
 
 
-6. Don't Repeat Yourself (D.R.Y.)
+6. Dont Repeat Yourself
 
 var orangeCost = function(cost)
 {
