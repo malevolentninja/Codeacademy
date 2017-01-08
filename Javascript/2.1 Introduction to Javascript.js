@@ -45,6 +45,8 @@ var foodDemand = function(food) {
     console.log("I want to eat "+ food);
 }
 foodDemand("Pizza");
+
+
 5. Tying it all together
 
 // Nicely written function:
