@@ -1,4 +1,4 @@
-1. While we're at it
+1. While we are at it
 
 var coinFace = Math.floor(Math.random() * 2);
 
