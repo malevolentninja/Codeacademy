@@ -61,6 +61,8 @@ var greeting = function(name)
     console.log(name)
 };
 greeting("John");
+
+
 6. Don't Repeat Yourself (D.R.Y.)
 
 var orangeCost = function(cost)
@@ -80,6 +82,8 @@ var timesTwo = function(number) {
 
 var newNumber = timesTwo(10000);
 console.log(newNumber);
+
+
 8. Function, return and if/else
 
 var quarter = function(number)
