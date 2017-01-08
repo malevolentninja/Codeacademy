@@ -1,4 +1,5 @@
-xvar friends = {
+//Bill gates and steve jobs used as default for a contact list
+var friends = {
 bill: {
     firstName: "Bill",
     lastName: "Gates",
