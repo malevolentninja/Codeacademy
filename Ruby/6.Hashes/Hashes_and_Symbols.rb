@@ -32,19 +32,62 @@ creatures["animal"]
 no_nil_hash = Hash.new("drafty")
 
 # 5. A Key of a Different Colour. 
-
+menagerie = { :foxes => 2,
+  :giraffe => 1,
+  :weezards => 17,
+  :elves => 1,
+  :canaries => 4,
+  :ham => 1
+}
 
 # 6. What's a Symbol?
 
+puts "string".object_id
+puts "string".object_id
+
+puts :symbol.object_id
+puts :symbol.object_id
+
 # 7. Symbol Syntax
+
+my_first_symbol = :triangle_star
 
 # 8. What are Symbols Used For?
 
+symbol_hash = {
+  :one => 1,
+  :buds => 4,   
+  :specops => 666,
+}
+
 # 9. Coverting Between Symbols and Strings
+
+strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+
+symbols = [] # new variable, symbols, and store an empty array in it
+
+strings.each do |x| # Use .each to iterate over the strings array.
+    symbols.push(x.intern ) # use .push to add that new symbol to symbols.
+end
+
 
 # 10. Many paths to the Same Summit 
 
+strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+
+symbols = [] # new variable, symbols, and store an empty array in it
+
+strings.each do |x| # Use .each to iterate over the strings array.
+    symbols.push(x.intern ) # use .push to add that new symbol to symbols.
+end
+
+
 # 11. All Aboard the Hash Rocket!
+
+movies = {
+    :A_fist_full_of_dollars => "Classic",
+    :A_few_dollars_more   => "Classic",
+}
 
 # 12. The Hash Rocket Has Landed 
 
