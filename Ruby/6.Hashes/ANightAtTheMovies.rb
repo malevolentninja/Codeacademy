@@ -1,6 +1,6 @@
 movies = {
   Memento: 3,
-  Primer: 4,
+  The_Matrix: 4,
   Ishtar: 1
 }
 
@@ -53,9 +53,10 @@ end
 
 #Alternative way of writing it. 
 
-movies = {The_Matrix: 3,
-    Silver_Strand: 4,
-    Rotten: 2
+movies = {
+    Memento: 3,
+    The_Matrix: 4,
+    Ishtar: 1,
     }
 
 puts "What do you want to do (add, update, display, delete)?"
