@@ -1589,24 +1589,311 @@ Removed the following code from css sheet:
 <!-- Section Six: The CSS Box Model Part Two: Borders -->
 	
 1. Box Borders
+<!-- No code to write -->
+	
 	
 2. Border Style
+
+<!--Add .hotel border style solid -->
+.hotel {
+  margin: 60px auto;
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  border-style: solid;
+}
 	
 3. Border Width I
 	
+<!-- border width of .hotel 2px -->
+.hotel {
+  margin: 60px auto;
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  border-style: solid;
+  border-width: 2px;
+}
+	
+	
 4. Border Wdith II
 
-5. Border Width III
+.hotel {
+  margin: 60px auto;
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  border-style: solid;
+  border-width: 4px 2px 4px 2px;
 	
+	
+5. Border Width III
+
+<!-- border width deleted and made border top width 5px -->
+.hotel {
+  margin: 60px auto;
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  border-style: solid;
+  border-top-width: 5px;
+}
+
 6. Border Colour
+
+.hotel {
+  margin: 60px auto;
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  border-style: solid;
+  border-top-width: 5px;
+  border-color: #AF3432;
+}
 	
 7. Shorthand
-	
+
+  .hotel {
+  margin: 60px auto;
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  border:2px solid #FFF;
+}
+
+
 8. Border Radius 
-	
+
+.hotel {
+  margin: 60px auto;
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  border:2px solid #FFF;
+  border-radius: 10px;
+}	
+
 9. Borders
+
+<!--CSS -->
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #1E1E24;
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_singaporeskyline.jpeg");
+  height: 400px;
+  background-position: bottom center;
+}
+
+h1 {
+  color: #FFF;
+  font-family: 'Ruda', sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #FFF;
+  font-family: 'Catamaran', sans-serif;
+  margin: 0;
+  text-align: left;
+}
+
+h3 {
+  color: #D7263D;
+  font-family: 'Ruda', sans-serif;
+  font-size: 32px;
+  margin: 0;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Pontano Sans', sans-serif;
+  margin: 0;
+  text-align: left;
+}
+
+.hotel {
+  margin: 60px auto;
+  padding: 10px 0px 0px 0px;
+  width: 90%;
+  border:2px solid #FFF;
+  border-radius: 10px;
+}
+
+.hotel-img {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.hotel-description {
+  display: inline-block;
+  width: 70%;
+}
+
+.book {
+  margin-top: 30px;
+  width: 100%;
+}
+
+a {
+  background-color: #D7263D;
+  color: #FFF;
+  display: block;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 16px;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  padding: 0;
+  margin: 10px 0px;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+}
+	
+<!-- HTML -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotels In Singapore</title>
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100|Pontano+Sans|Ruda:900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="jumbotron">
+    <h1>Hotels In Singapore</h1>
+  </div>
+
+  <div class="hotel">
+    <div class="hotel-img">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_raffles.jpg" width="250px">
+    </div>
+    <div class="hotel-description">
+      <ul>
+        <li>
+          <h2>Raffles Hotel</h2>
+        </li>
+        <li>
+          <h3>$500/night</h3>
+        </li>
+        <li>
+          <p>Raffles Hotel is a colonial-style luxury hotel in Singapore. It was established by Armenian hoteliers, the Sarkies Brothers, in 1887. The hotel was named after British statesman Sir Thomas Stamford Raffles, the founder of Singapore. It is the flagship property of Raffles Hotels & Resorts, a subsidiary of Fairmont Raffles Hotels International.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="book">
+      <a href="#">Book Now</a>
+    </div>
+  </div>
+
+  <div class="hotel">
+    <div class="hotel-img">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_conradintl.jpg" width="250px">
+    </div>
+    <div class="hotel-description">
+      <ul>
+        <li>
+          <h2>Conrad Centennial Singapore</h2>
+        </li>
+        <li>
+          <h3>$400/night</h3>
+        </li>
+        <li>
+          <p>Located in the Downtown Core (near Millenia Tower), Marina Centre, Singapore. The hotel has 507 guestrooms including 25 suites, and 31 floors with two basements. The hotel's carpark is shared with Millenia Walk. Conrad Centennial shares the same laundry services with sister hotel, The Ritz-Carlton Millenia Singapore. Both hotels are owned by the same owner, Pontiac Land (owned by the Kwee brothers).</p>
+        </li>
+      </ul>
+    </div>
+    <div class="book">
+      <a href="#">Book Now</a>
+    </div>
+  </div>
+
+  <div class="hotel">
+    <div class="hotel-img">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_damenlou.jpg" width="250px">
+    </div>
+    <div class="hotel-description">
+      <ul>
+        <li>
+          <h2>Damenlou Hotel</h2>
+        </li>
+        <li>
+          <h3>$300/night</h3>
+        </li>
+        <li>
+          <p>Damenlou Hotel is a small hotel located at Ann Siang Road, in Chinatown, within the Central Area of Singapore.Damenlou Hotel's origins can be traced to the creation of the dish of fishhead mifen (rice vermicelli), which was invented by Tang Kwong Swee in the 1920s. The hotel has a famous restaurant, named Swee Kee.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="book">
+      <a href="#">Book Now</a>
+    </div>
+  </div>
+
+  <div class="hotel">
+    <div class="hotel-img">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_shangrila.jpg" width="250px">
+    </div>
+    <div class="hotel-description">
+      <ul>
+        <li>
+          <h2>Shangri-La Hotel Singapore</h2>
+        </li>
+        <li>
+          <h3>$200/night</h3>
+        </li>
+        <li>
+          <p>The hotel has 747 guestrooms and suites spread over the Tower Wing, Garden Wing and Valley Wing, 127 serviced apartments and 55 luxurious condominium units. The hotel boasts 15 acres of landscaped gardens which are visible through the glass walls enclosing the lobby and dining areas, and has been referred to as "Singapore's other botanical garden".</p>
+        </li>
+      </ul>
+    </div>
+    <div class="book">
+      <a href="#">Book Now</a>
+    </div>
+  </div>
+
+  <div class="hotel">
+    <div class="hotel-img">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_swisshotel.jpg" width="250px">
+    </div>
+    <div class="hotel-description">
+      <ul>
+        <li>
+          <h2>Swissotel The Stamford</h2>
+        </li>
+        <li>
+          <h3>$100/night</h3>
+        </li>
+        <li>
+          <p>Designed by architect I.M. Pei, at a height of 226 meters it is one of Southeast Asia's tallest hotels. Situated at 2 Stamford Road, the hotel sits above City Hall MRT Station. The 5-star hotel has 1,261 rooms and suites, 16 restaurants and bars, Raffles City Convention Centre, and one of Asia's largest spas.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="book">
+      <a href="#">Book Now</a>
+    </div>
+  </div>
+
+</body>
+</html>
+	
 	
 <!-- Section Six: The CSS Box Model Part Three: Content -->
+	
+
 	
 <!-- Section Six: The CSS Box Model Part Four: Changing the Box Model -->
 	
