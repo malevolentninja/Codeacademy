@@ -57,9 +57,26 @@ puts favorite_language
     
 #8. Implicit Return 
 
+ def multiple_of_three(n)
+  n % 3 == 0 ? "True" : "False" # <----- removed return!
+end
 
 #9. Short-Circuit Evaluation 
 
+ def a
+  puts "A was evaluated!"
+  return true
+end
+
+def b
+  puts "B was also evaluated!"
+  return true
+end
+
+puts a || b
+puts "------"
+puts a && b    
+        
 #10. The right tool for the job 
 
 #11. Up the Down Staircase
