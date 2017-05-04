@@ -1,5 +1,3 @@
-
-
 // 1. Variables 
 
 // No code to write. 
