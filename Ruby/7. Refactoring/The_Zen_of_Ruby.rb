@@ -79,6 +79,126 @@ puts a && b
         
 #10. The right tool for the job 
 
+my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+my_array.each{ |i| puts i if i % 2 == 0 }
+        
 #11. Up the Down Staircase
 
-# 12. 
+# Write your code below!
+"L".upto("P") { |letter| puts letter }
+        
+# 12. Call and Response
+    
+age = 26
+
+# Add your code below!
+
+age.respond_to?(:next)
+        
+        
+# 13. Being Pushy   
+ 
+alphabet = ["a", "b", "c"]
+alphabet << 'd' # Update me! - added concatenations operator
+
+caption = "A giraffe surrounded by "
+caption << "weezards!" # Me, too!       
+        
+        
+# 14. String Interpolation
+        
+favorite_things = ["Ruby", "espresso", "candy"]
+
+puts "A few of my favorite things:"
+
+favorite_things.each do |thing|
+puts "I love #{thing}!"
+end        
+        
+ 
+# 15. One-Liners        
+        
+# original code lasted 3 lines: 
+        if 1 < 2
+  puts "One is less than two!"
+end
+        
+#made one line:
+puts "One is less than two!" if 1 < 2
+        
+# 16. The Ternary Operator     
+ 
+ # original code lasted 5 lines: 
+ if 1 < 2
+  puts "One is less than two!"
+else
+  puts "One is not less than two."
+end       
+        
+ # made one line: 
+ 
+puts 1 < 2 ? "One is less than two!" : "One is not less than two."       
+        
+        
+        
+# 17. In Case of Many Options 
+        
+# if/else/if else statement
+puts "What's your favorite language?"
+language = gets.chomp
+
+if language == "Ruby"
+  puts "Ruby is great for web apps!"
+elsif language == "Python"
+  puts "Python is great for science."
+elsif language == "JavaScript"
+  puts "JavaScript makes websites awesome."
+elsif language == "HTML"
+  puts "HTML is what websites are made of!"
+elsif language == "CSS"
+  puts "CSS makes websites pretty."
+else
+  puts "I don't know that language!"
+end
+        
+        
+        
+# Case statement
+puts "What's your favorite language?"
+language = gets.chomp
+case language
+when "Ruby" then
+  puts "Ruby is great for web apps!"
+when "Python" then
+  puts "Python is great for science."
+when "JavaScript" then
+  puts "JavaScript makes websites awesome."
+when "HTML" then
+  puts "HTML is what websites are made of!"
+when "CSS" then
+  puts "CSS makes websites pretty."
+else
+  puts "I don't know that language!"
+end
+        
+    
+        
+# 18. Conditional Assignment        
+        
+ favorite_animal ||= "Armadillo"       
+        
+        
+# 19. Implicit Return        
+        
+def square(n)
+    n * n # or n ** 2
+end        
+        
+# 20. 'For' Shame! 
+# for loop version 
+for i in (1..3)
+  puts "I'm a refactoring master!"
+end
+    
+# using .times instead   
+3.times do puts "I'm a refactoring master!" end    
