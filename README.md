@@ -10,13 +10,13 @@
 
 * HTML & CSS Part One 
 * HTML & CSS Part Two 
-* SASS
+* [SASS](https://github.com/malevolentninja/Codeacademy/tree/master/Sass)
 * jQuery 
 * Javascript 
 * Learn ReactJs: Part I
 * Learn ReactJS: Part II
 * Learn AngularJS 1.X
-* Ruby
+* [Ruby](https://github.com/malevolentninja/Codeacademy/tree/master/Ruby)
 * Learn Ruby on Rails
 * Ruby on Rails: Authentication 
 
@@ -28,9 +28,9 @@
 
 
 ### Data Analytics: 
-* SQL
-* SQL: Table Transformation
-* SQL:Analyzing Business Metrics
+* [SQL](https://github.com/malevolentninja/Codeacademy/tree/master/SQL/Learn-SQL)
+* [SQL: Table Transformation](https://github.com/malevolentninja/Codeacademy/tree/master/SQL/SQL-Table-Transformation)
+* [SQL:Analyzing Business Metrics]((https://github.com/malevolentninja/Codeacademy/tree/master/SQL/SQL-Analyzing-Business-Metrics)
 
 ### APIs: 
  - Learn the Watson API -> IBM's Personality insights API to analyse shared traits between two Titter users. 
