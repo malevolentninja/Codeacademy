@@ -1,7 +1,7 @@
 # Codeacademy
 
 
-[Codeacademy](https://www.codecademy.com/learn/all) provides the opportunity to learn free
+[Codeacademy](https://www.codecademy.com/learn/all) provides the opportunity to learn free and a warm up to starting to learn to code. 
 
 
 ## Courses 
