@@ -37,7 +37,8 @@
 
 ### Tools: 
 
-• Git 
+• [Git](https://github.com/malevolentninja/Codeacademy/tree/master/Learn_Git) 
+
 • Command Line 
 
 ## Projects: 
