@@ -1,0 +1,37 @@
+
+1. Hello Git 
+Enter in scene-1.txt:
+Harry Programmer and the Sorcerer’s Code: Scene 1
+
+2. git init
+Bash 
+$ git init
+initialized empty Git repository in....
+
+3. Git Workflow
+no writing. 
+
+4. git status
+Bash 
+$ git status 
+On branch master
+
+Initial commit
+...
+
+5. git add
+bash 
+$ git add scene-1.txt
+$ git status
+
+6. git diff
+add--> Dumblediff: I should've known you would be here, Professor McGonagit.
+
+$ git diff scene-1.txt
+$ git add scene-1.txt
+
+7. git commit 
+$ git commit -m "complete first line dialogue"
+
+8. git log
+$ git log
