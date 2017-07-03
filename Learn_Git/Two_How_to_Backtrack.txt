@@ -1,0 +1,61 @@
+How to Back track
+
+1. Backing Intro
+scene-5.txt
+
+Hamlet: Act 1, Scene 5
+
+Enter Ghost and Hamlet
+
+Hamlet:
+Where wilt thou lead me? speak; I'll go no further
+
+Ghost:
+Mark me.
+
+Hamlet:
+I will.
+
+
+Ghost: 
+My hour is almost come,
+When I to sulphurous and tormenting flames
+Must render up myself.
+
+
+bash
+$ git add scene-5.txt
+$ git commit -m "Hamlets dads ghost leaving"
+
+2. Head commit
+
+$ git show HEAD
+
+3. git checkout
+Entered in scene-5.txt
+Ghost: 
+My hour is almost come,
+When I to sulphurous and tormenting balloons
+Must render up myself 
+
+$ git diff scene-5.txt
+$ git checkout HEAD scene-5.txt
+
+4. more git add
+
+Larry changed to Laertes
+$ git add scene-3.txt scene-7.txt
+$ git commit -m "Larry chagned to Laertes"
+
+5. git reset I
+
+$ git add scene-2.txt
+$ git status scene-2.txt
+$ git reset HEAD scene-2.txt
+$ git commit -m "larry to laertes"
+
+6. git reset II
+
+7. git reset review 
+
+8. generalization 
