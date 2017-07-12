@@ -39,3 +39,141 @@ I will be practiing with the aim of using to improve my github readme pages.
 #end#
 
 3. Format Texts? A piece of Cake!
+/* one example of bold and one example of italic */
+
+/* Write your content below this line: #begin#
+
+**This an example of writing in markdow.** 
+
+*I will be practicing with the aim of using to improve my github readme pages.* 
+
+#end# Don't touch this line */
+
+
+4. Headings? A piece of Pancake
+
+
+/* Write your content below this line: #begin#
+
+#Tracks in Codecademy#
+
+Tracks are series of courses grouped to help you master a topic or language. Choose one to start learning!
+
+##Javascript Fundamentals##
+
+Learn to create simple applications and games with this introduction to the JavaScript language. By the end of this track, you’ll make your own Blackjack game!
+
+##Web Fundamentals##
+
+Learn the building blocks of web development with HTML and CSS. Build a basic webpage by the end of the first course, and a complete website by the end of the track!
+
+###Code Year###
+
+Code Year takes you on a tour of important web technologies. Learn programming basics with Javascript, then add HTML and CSS to build interactive websites.
+
+#end# Don't touch this line */
+
+
+5. Line Break and Horizontal Rule 
+
+/* Write your content below this line: #begin#
+
+In HTML, the content seperated by line break(s) are in the same paragraph.
+
+---
+A horizontal rule defines a thematic break in an HTML page.
+(e.g. a shift of topic)  
+It's not only a visual separator.     
+
+#end# Don't touch this line */
+
+6. Review 
+
+/* Write your content below this line: #begin#
+
+Markdown, An Awesome Tool for a Writer
+=======
+
+Write paragraphs separated by a blank line.
+
+You don't need to handle "p-tags" anymore.
+
+Write "Smoothly"
+-------
+
+### Strong and Emphasis
+
+No HTML tags. Put stars to **bold** or *italic*.
+
+### Line Break and Horizontal Rule
+
+You need to put two spaces at the end of the line  
+for a  
+line break.
+
+Use a horizontal rule to shift topic in the article.
+
+-------
+
+**Please make use of Markdown in discussions from now on!!**
+
+#end# Don't touch this line */
+
+
+7. Code Span and Block
+
+/* Write your content below this line: #begin#
+
+In the exercise, I tried a lot of different way
+
+`I tried: function nickname = (name) {(some codes)}`
+
+ `and: nickname = function(name) {(some codes)}
+but it just doesn't let me pass.`
+
+    var first_name = 'Pan';
+    var last_name = 'Cake';
+    var nickname = function(name) {
+    // merge the name
+
+    return first_name + last_name;
+    }
+    console.log(name);
+
+Is that a bug in Codecademy? (palm face)
+
+#end# Don't touch this line */
+
+8. Mastering Lists
+
+/* Write your content below this line: #begin#
+
+Goals for the year:
+
+1. Strong JavaScript Skills    
+2. Learn Typescript    
+3. Strengthen web development dates
+
+Steps To Achieve The Goals: 
+
+ - Learn from various sources   
+ - develop real examples and projects   
+ - work regularly
+
+#end# Don't touch this line */
+/* Writing Content-Rich HTML with Markdown */
+
+
+9. Hyperlinks 
+10. Lazzzy Linking 
+11. Picture Telling Story
+12. Blockquote As Respect 
+13. Review
+
+/* Advanced Techniques */
+
+14. Paragraph and Line Break in List
+15. Inline HTML
+16. Escaping is Not a Problem 
+17. What if...? 
+18. Let's Make Use of Markdown in Codeacademy
