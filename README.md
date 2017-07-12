@@ -25,6 +25,7 @@
 * Python
 * [Learn Java](https://github.com/malevolentninja/Codeacademy/tree/master/Java) 
 * PHP
+* [Markdown](https://github.com/malevolentninja/Codeacademy/blob/master/Markdown.html)
 
 
 ### Data Analytics: 
