@@ -20,7 +20,7 @@ Learn how to create a twitter app and start accessing data from users, Tweets an
 ### Evernote API
 Authentication with Evernote
 
-### BOX API - Put files in the Cloud with box
+### BOX API - Put files in the Cloud with box
 Learn how to use the BOX API to store and share your content in the cloud!
 
 ## Foundation of Python with APIs
