@@ -34,12 +34,22 @@
 * [SQL:Analyzing Business Metrics](https://github.com/malevolentninja/Codeacademy/tree/master/SQL/SQL-Analyzing-Business-Metrics)
 
 ### APIs: 
- - Learn the Watson API -> IBM's Personality insights API to analyse shared traits between two Titter users. 
+* Foundation of JavaScript with APIs
+* YouTube API - Searching for YouTube videos
+* Mandrill APIou're getting the most out of your transactional emails'
+* SoundCloud API
+* Foundation of Ruby with APIs
+* Twitter API 
+* Evernote API
+* BOX API 
+* Foundation of Python with APIs
+* NPR (National Public Radio) API 
+
+
 
 ### Tools: 
 
 • [Git](https://github.com/malevolentninja/Codeacademy/tree/master/Learn_Git) 
-
 • Command Line 
 
 ## Projects: 
