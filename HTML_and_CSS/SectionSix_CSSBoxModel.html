@@ -1,0 +1,1437 @@
+
+<!-- Section Six: The CSS Box Model Part One: Understanding the Box Model -->
+
+1. What is box model?
+
+No Code.
+
+2. Width and Height
+
+.content-header {
+height: 320px;
+}
+
+.navigation {
+width: 100%
+}
+
+3. Width: Minimum and Maxiumum
+
+p {
+min-width: 200px;
+max-width: 800px;
+}
+
+4. Height: Minimum and Maximum
+
+p {
+min-height: 200px;
+max-height: 300px;
+}
+
+5. Overflow
+
+.content-box {
+overflow: scroll;
+}
+
+6. Review: Box Model
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Davie JR's Menu</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="navigation">
+  <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" width="180px;">
+  <ul>
+    <li>Menu</li>
+    <li>Nutrition</li>
+    <li>Order</li>
+    <li>Locations</li>
+  </ul>
+</div>
+
+<div class="content-box">
+  <div class="content-header">
+    <h1>BBQ Bacon Burger</h1>
+  </div>
+  <div class="content-body">
+    <p>Our BBQ Bacon Burger features our special house ground blend of wagyu and sirloin, spiced perfectly, and finished off with just a drop of white truffle oil. A butter grilled brioche bun layered with roasted red onion, perfectly crispy pork belly,
+      and our hickory smoked BBQ sauce.</p>
+    <br />
+    <a href="#" class="btn">Order Now</a>
+    <br>
+    <ul>
+      <li>
+        <h3>Calories</h3>
+        <h2>678</h2>
+      </li>
+
+      <li>
+        <h3>Fat</h3>
+        <h2>32</h2>
+      </li>
+
+      <li>
+        <h3>Protein</h3>
+        <h2>8</h2>
+      </li>
+
+      <li>
+        <h3>Carbohydrates</h3>
+        <h2>34</h2>
+      </li>
+
+      <li>
+        <h3>Sodium</h3>
+        <h2>112</h2>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+body {
+background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_foodlogo.png");
+background-repeat: repeat;
+overflow: hidden;
+text-align: center;
+}
+
+.navigation {
+background-color: rgba(255, 255, 255, 0.9);
+height: auto;
+width: 100%;
+text-align: center;
+position: fixed;
+left: 0;
+top: 0;
+z-index: 999;
+}
+
+.navigation ul {
+padding: 0;
+}
+
+.navigation li {
+color: #666666;
+display: inline-block;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 100;
+letter-spacing: 2px;
+margin: 20px;
+text-transform: uppercase;
+}
+
+/** Right side styling **/
+
+.content-box {
+background: rgba(255, 255, 255, 0.9);
+height: 500px;
+margin: 0 auto;
+position: relative;
+top: 220px;
+width: 80%;
+overflow: scroll;
+}
+
+.content-header {
+background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burgerphoto.jpeg");
+background-position: center;
+background-size: cover;
+position: relative;
+top: -50px;
+height: 320px;
+}
+
+.content-body {
+margin: 0 auto;
+width: 90%;
+}
+
+h1 {
+background: #05A8AA;
+color: #FFF;
+font-family: 'Oswald', sans-serif;
+font-size: 40px;
+font-weight: 300;
+line-height: 40px;
+margin: 0 auto;
+padding: 20px;
+position: relative;
+text-transform: uppercase;
+top: 130px;
+width: 70%;
+}
+
+h2 {
+color: #FFF;
+font-family: 'Roboto', sans-serif;
+font-size: 26px;
+font-weight: 700;
+letter-spacing: 2px;
+margin: 0;
+text-transform: uppercase;
+}
+
+h3 {
+color: rgba(255, 255, 255, 0.6);
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 100;
+letter-spacing: 2px;
+margin: 0;
+text-transform: uppercase;
+}
+
+p {
+color: #333;
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 100;
+line-height: 34px;
+min-width: 200px;
+max-width: 800px;
+min-height: 200px;
+max-height: 300px;
+}
+
+.content-box ul {
+padding: 40px 0px;
+}
+
+.content-box li {
+background-color: #05A8AA;
+display: inline-block;
+list-style: none;
+margin-bottom: 3px;
+padding: 20px 40px;
+width: 200px;
+}
+
+
+
+.btn {
+color: #05A8AA;
+border: 1px solid #05A8AA;
+border-radius: 4px;
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 700;
+margin: 10px 0px;
+padding: 20px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.btn:hover {
+background-color: #05A8AA;
+border: 1px solid #05A8AA;
+color: #FFF;
+}
+
+
+Removed the following code from css sheet:
+* {
+  border : 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+<!-- Section Six: The CSS Box Model Part Two: Borders -->
+
+1. Box Borders
+<!-- No code to write -->
+
+
+2. Border Style
+
+<!--Add .hotel border style solid -->
+.hotel {
+margin: 60px auto;
+padding: 10px 0px 0px 0px;
+width: 90%;
+border-style: solid;
+}
+
+3. Border Width I
+
+<!-- border width of .hotel 2px -->
+.hotel {
+margin: 60px auto;
+padding: 10px 0px 0px 0px;
+width: 90%;
+border-style: solid;
+border-width: 2px;
+}
+
+
+4. Border Wdith II
+
+.hotel {
+margin: 60px auto;
+padding: 10px 0px 0px 0px;
+width: 90%;
+border-style: solid;
+border-width: 4px 2px 4px 2px;
+
+
+5. Border Width III
+
+<!-- border width deleted and made border top width 5px -->
+.hotel {
+margin: 60px auto;
+padding: 10px 0px 0px 0px;
+width: 90%;
+border-style: solid;
+border-top-width: 5px;
+}
+
+6. Border Colour
+
+.hotel {
+margin: 60px auto;
+padding: 10px 0px 0px 0px;
+width: 90%;
+border-style: solid;
+border-top-width: 5px;
+border-color: #AF3432;
+}
+
+7. Shorthand
+
+.hotel {
+margin: 60px auto;
+padding: 10px 0px 0px 0px;
+width: 90%;
+border:2px solid #FFF;
+}
+
+
+8. Border Radius
+
+.hotel {
+margin: 60px auto;
+padding: 10px 0px 0px 0px;
+width: 90%;
+border:2px solid #FFF;
+border-radius: 10px;
+}
+
+9. Borders
+
+<!--CSS -->
+body {
+padding: 0;
+margin: 0;
+background-color: #1E1E24;
+text-align: center;
+}
+
+.jumbotron {
+background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_singaporeskyline.jpeg");
+height: 400px;
+background-position: bottom center;
+}
+
+h1 {
+color: #FFF;
+font-family: 'Ruda', sans-serif;
+font-size: 70px;
+font-weight: 900;
+margin: 0;
+padding-top: 120px;
+text-align: center;
+text-transform: uppercase;
+}
+
+h2 {
+color: #FFF;
+font-family: 'Catamaran', sans-serif;
+margin: 0;
+text-align: left;
+}
+
+h3 {
+color: #D7263D;
+font-family: 'Ruda', sans-serif;
+font-size: 32px;
+margin: 0;
+position: relative;
+text-align: left;
+text-transform: uppercase;
+}
+
+p {
+color: rgba(255, 255, 255, 0.75);
+font-family: 'Pontano Sans', sans-serif;
+margin: 0;
+text-align: left;
+}
+
+.hotel {
+margin: 60px auto;
+padding: 10px 0px 0px 0px;
+width: 90%;
+border:2px solid #FFF;
+border-radius: 10px;
+}
+
+.hotel-img {
+display: inline-block;
+margin-top: 20px;
+}
+
+.hotel-description {
+display: inline-block;
+width: 70%;
+}
+
+.book {
+margin-top: 30px;
+width: 100%;
+}
+
+a {
+background-color: #D7263D;
+color: #FFF;
+display: block;
+font-family: 'Pontano Sans', sans-serif;
+font-size: 16px;
+padding: 14px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+ul {
+padding: 0;
+margin: 10px 0px;
+}
+
+li {
+margin: 0;
+list-style: none;
+}
+
+<!-- HTML -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotels In Singapore</title>
+<link href="https://fonts.googleapis.com/css?family=Catamaran:100|Pontano+Sans|Ruda:900" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron">
+  <h1>Hotels In Singapore</h1>
+</div>
+
+<div class="hotel">
+  <div class="hotel-img">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_raffles.jpg" width="250px">
+  </div>
+  <div class="hotel-description">
+    <ul>
+      <li>
+        <h2>Raffles Hotel</h2>
+      </li>
+      <li>
+        <h3>$500/night</h3>
+      </li>
+      <li>
+        <p>Raffles Hotel is a colonial-style luxury hotel in Singapore. It was established by Armenian hoteliers, the Sarkies Brothers, in 1887. The hotel was named after British statesman Sir Thomas Stamford Raffles, the founder of Singapore. It is the flagship property of Raffles Hotels & Resorts, a subsidiary of Fairmont Raffles Hotels International.</p>
+      </li>
+    </ul>
+  </div>
+  <div class="book">
+    <a href="#">Book Now</a>
+  </div>
+</div>
+
+<div class="hotel">
+  <div class="hotel-img">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_conradintl.jpg" width="250px">
+  </div>
+  <div class="hotel-description">
+    <ul>
+      <li>
+        <h2>Conrad Centennial Singapore</h2>
+      </li>
+      <li>
+        <h3>$400/night</h3>
+      </li>
+      <li>
+        <p>Located in the Downtown Core (near Millenia Tower), Marina Centre, Singapore. The hotel has 507 guestrooms including 25 suites, and 31 floors with two basements. The hotel's carpark is shared with Millenia Walk. Conrad Centennial shares the same laundry services with sister hotel, The Ritz-Carlton Millenia Singapore. Both hotels are owned by the same owner, Pontiac Land (owned by the Kwee brothers).</p>
+      </li>
+    </ul>
+  </div>
+  <div class="book">
+    <a href="#">Book Now</a>
+  </div>
+</div>
+
+<div class="hotel">
+  <div class="hotel-img">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_damenlou.jpg" width="250px">
+  </div>
+  <div class="hotel-description">
+    <ul>
+      <li>
+        <h2>Damenlou Hotel</h2>
+      </li>
+      <li>
+        <h3>$300/night</h3>
+      </li>
+      <li>
+        <p>Damenlou Hotel is a small hotel located at Ann Siang Road, in Chinatown, within the Central Area of Singapore.Damenlou Hotel's origins can be traced to the creation of the dish of fishhead mifen (rice vermicelli), which was invented by Tang Kwong Swee in the 1920s. The hotel has a famous restaurant, named Swee Kee.</p>
+      </li>
+    </ul>
+  </div>
+  <div class="book">
+    <a href="#">Book Now</a>
+  </div>
+</div>
+
+<div class="hotel">
+  <div class="hotel-img">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_shangrila.jpg" width="250px">
+  </div>
+  <div class="hotel-description">
+    <ul>
+      <li>
+        <h2>Shangri-La Hotel Singapore</h2>
+      </li>
+      <li>
+        <h3>$200/night</h3>
+      </li>
+      <li>
+        <p>The hotel has 747 guestrooms and suites spread over the Tower Wing, Garden Wing and Valley Wing, 127 serviced apartments and 55 luxurious condominium units. The hotel boasts 15 acres of landscaped gardens which are visible through the glass walls enclosing the lobby and dining areas, and has been referred to as "Singapore's other botanical garden".</p>
+      </li>
+    </ul>
+  </div>
+  <div class="book">
+    <a href="#">Book Now</a>
+  </div>
+</div>
+
+<div class="hotel">
+  <div class="hotel-img">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_swisshotel.jpg" width="250px">
+  </div>
+  <div class="hotel-description">
+    <ul>
+      <li>
+        <h2>Swissotel The Stamford</h2>
+      </li>
+      <li>
+        <h3>$100/night</h3>
+      </li>
+      <li>
+        <p>Designed by architect I.M. Pei, at a height of 226 meters it is one of Southeast Asia's tallest hotels. Situated at 2 Stamford Road, the hotel sits above City Hall MRT Station. The 5-star hotel has 1,261 rooms and suites, 16 restaurants and bars, Raffles City Convention Centre, and one of Asia's largest spas.</p>
+      </li>
+    </ul>
+  </div>
+  <div class="book">
+    <a href="#">Book Now</a>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<!-- Section Six: The CSS Box Model Part Three: Content -->
+1. The Content Inside
+
+/* add css code to html */
+body {
+  background-color: #FFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+}
+
+.logo {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 0px 50px;
+}
+
+.banner {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+}
+
+#banner-content {
+  border: 1px solid #FFF;
+  position: relative;
+  top: 20%;
+  width: 60%;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  border: 1px solid #D7263D;
+  color: #D7263D;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 40px 12%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #D7263D;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10%;
+  text-transform: uppercase;
+}
+
+p {
+  color: #333;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+}
+
+.pull-quote {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 70%;
+}
+
+.byline {
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  color: #333;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.share {
+  border: 1px solid #DDD;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: #D7263D;
+  border: 1px solid #D7263D;
+  border-radius: 3px;
+  color: #FFF;
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: #FFF;
+  border: 1px solid #D7263D;
+  color: #D7263D;
+  animation: ease;
+}
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Terminal - Your Source for Fact-Based News</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="navigation">
+    <ul>
+      <li>Local</li>
+      <li>National</li>
+      <li class="logo">The Terminal</li>
+      <li>Global</li>
+      <li>Oped</li>
+      <li class="donate">Donate</li>
+    </ul>
+  </div>
+
+  <div class="banner">
+    <div id="banner-content">
+      <h1>Conservation Efforts at Lake Tahoe Being Praised by Nation's Leaders</h1>
+    </div>
+  </div>
+
+  <div class="content">
+    <h3>The State's Latest Conservation Efforts Are Being Heralded By Nation's Top Leaders As Groundbreaking and Forward Thinking.</h3>
+    <span class="byline">Written By: James Jayce</span>
+    <p>Until recently, construction on the banks of the Lake had been largely under the control of real estate developers. Construction activities have resulted in a clouding of the lake's blue waters. Currently, the Tahoe Regional Planning Agency is regulating construction along the shoreline and has won two Federal Supreme Court battles over recent decisions. These regulations are unpopular with many residents, especially those in the Tahoe Lakefront Homeowners Association.</p>
+
+    <p>The League to Save Lake Tahoe (Keep Tahoe Blue) has been an environmental watchdog in the Lake Tahoe Basin for 50 years. Founded when a proposal to build a four-lane highway around the lake (with a bridge over the entrance to Emerald Bay) was proposed in 1957, the League has thwarted poorly designed development projects and environmentally unsound planning. The League embraces responsible and diversified use of the Lake's resources while protecting and restoring its natural attributes.</p>
+
+    <div class="pull-quote">
+      <h2>"The League embraces responsible and diversified use of the Lake's resources while protecting and restoring its natural attributes"</h2>
+    </div>
+
+    <p>Since 1980, the Lake Tahoe Interagency Monitoring Program (LTIMP) has been measuring stream discharge and concentrations of nutrients and sediment in up to 10 tributary streams in the Lake Tahoe Basin, California-Nevada. The objectives of the LTIMP are to acquire and disseminate the water quality information necessary to support science-based environmental planning and decision making in the basin. The LTIMP is a cooperative program with support from 12 federal and state agencies with interests in the Tahoe Basin. This data set, together with more recently acquired data on urban runoff water quality, is being used by the Lahontan Regional Water Quality Control Board to develop a program (mandated by the Clean Water Act) to limit the flux of nutrients and fine sediment to the Lake.</p>
+
+    <p>UC Davis remains a primary steward of the lake. The UC Davis Tahoe Environmental Research Center is dedicated to research, education and public outreach, and to providing objective scientific information for restoration and sustainable use of the Lake Tahoe Basin. Each year, it produces a well-publicized "State of the Lake" assessment report.</p>
+  </div>
+
+  <div class="share">
+    <a href="#">Share</a>
+    <a href="#">Mark as Favorite</a>
+    <a href="#">Mark as Read</a>
+  </div>
+
+</body>
+</html>
+
+2. Padding I
+
+#banner-content {
+  border: 1px solid #FFF;
+  position: relative;
+  top: 20%;
+  width: 60%;
+  padding: 30px;
+}
+
+3. Padding II
+
+#banner-content {
+  border: 1px solid #FFF;
+  position: relative;
+  top: 20%;
+  width: 60%;
+  padding: 30px 10px 30px 10px;
+}
+
+4. Padding III
+
+#banner-content {
+  border: 1px solid #FFF;
+  position: relative;
+  top: 20%;
+  width: 60%;
+  padding: 30px 10px;
+}
+
+5. Padding IV
+
+.byline {
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  color: #333;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+6. Margin I
+
+li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+7. Margin II
+
+li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  margin: 0px 20px 0px 20px;
+}
+
+8. Margin III
+
+li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  margin: 0px 20px;
+}
+
+9. Margin IV
+
+li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+10. Margin: Auto
+
+#banner-content {
+  border: 1px solid #FFF;
+  position: relative;
+  top: 20%;
+  width: 60%;
+  padding: 30px 10px;
+  margin: auto;
+}
+
+11. Resetting Defaults
+
+body {
+  background-color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+12. Display
+
+li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+13. Visibility
+
+.donate {
+  visibility: hidden;
+}
+
+14. Review: content
+
+/*
+body {
+  background-color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.donate {
+  visibility: hidden;
+}
+
+li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.logo {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 0px 50px;
+}
+
+.banner {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+}
+
+#banner-content {
+  border: 1px solid #FFF;
+  position: relative;
+  top: 20%;
+  width: 60%;
+  padding: 30px 10px;
+  margin: auto;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  border: 1px solid #D7263D;
+  color: #D7263D;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 40px 12%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #D7263D;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10%;
+  text-transform: uppercase;
+}
+
+p {
+  color: #333;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+}
+
+.pull-quote {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 70%;
+}
+
+.byline {
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  color: #333;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.share {
+  border: 1px solid #DDD;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: #D7263D;
+  border: 1px solid #D7263D;
+  border-radius: 3px;
+  color: #FFF;
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: #FFF;
+  border: 1px solid #D7263D;
+  color: #D7263D;
+  animation: ease;
+}
+*/
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Terminal - Your Source for Fact-Based News</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="navigation">
+    <ul>
+      <li>Local</li>
+      <li>National</li>
+      <li class="logo">The Terminal</li>
+      <li>Global</li>
+      <li>Oped</li>
+      <li class="donate">Donate</li>
+    </ul>
+  </div>
+
+  <div class="banner">
+    <div id="banner-content">
+      <h1>Conservation Efforts at Lake Tahoe Being Praised by Nation's Leaders</h1>
+    </div>
+  </div>
+
+  <div class="content">
+    <h3>The State's Latest Conservation Efforts Are Being Heralded By Nation's Top Leaders As Groundbreaking and Forward Thinking.</h3>
+    <span class="byline">Written By: James Jayce</span>
+    <p>Until recently, construction on the banks of the Lake had been largely under the control of real estate developers. Construction activities have resulted in a clouding of the lake's blue waters. Currently, the Tahoe Regional Planning Agency is regulating construction along the shoreline and has won two Federal Supreme Court battles over recent decisions. These regulations are unpopular with many residents, especially those in the Tahoe Lakefront Homeowners Association.</p>
+
+    <p>The League to Save Lake Tahoe (Keep Tahoe Blue) has been an environmental watchdog in the Lake Tahoe Basin for 50 years. Founded when a proposal to build a four-lane highway around the lake (with a bridge over the entrance to Emerald Bay) was proposed in 1957, the League has thwarted poorly designed development projects and environmentally unsound planning. The League embraces responsible and diversified use of the Lake's resources while protecting and restoring its natural attributes.</p>
+
+    <div class="pull-quote">
+      <h2>"The League embraces responsible and diversified use of the Lake's resources while protecting and restoring its natural attributes"</h2>
+    </div>
+
+    <p>Since 1980, the Lake Tahoe Interagency Monitoring Program (LTIMP) has been measuring stream discharge and concentrations of nutrients and sediment in up to 10 tributary streams in the Lake Tahoe Basin, California-Nevada. The objectives of the LTIMP are to acquire and disseminate the water quality information necessary to support science-based environmental planning and decision making in the basin. The LTIMP is a cooperative program with support from 12 federal and state agencies with interests in the Tahoe Basin. This data set, together with more recently acquired data on urban runoff water quality, is being used by the Lahontan Regional Water Quality Control Board to develop a program (mandated by the Clean Water Act) to limit the flux of nutrients and fine sediment to the Lake.</p>
+
+    <p>UC Davis remains a primary steward of the lake. The UC Davis Tahoe Environmental Research Center is dedicated to research, education and public outreach, and to providing objective scientific information for restoration and sustainable use of the Lake Tahoe Basin. Each year, it produces a well-publicized "State of the Lake" assessment report.</p>
+  </div>
+
+  <div class="share">
+    <a href="#">Share</a>
+    <a href="#">Mark as Favorite</a>
+    <a href="#">Mark as Read</a>
+  </div>
+
+</body>
+</html>
+
+<!-- Section Six: The CSS Box Model Part Four: Changing the Box Model -->
+
+
+<!-- Section Six: The CSS Box Model Part Four: Changing the Box Model -->
+
+1. Why Change the Box Model?
+/*
+body {
+background-color: #FFF;
+margin: 0px;
+padding: 50px 60px;
+}
+
+h1 {
+color: #004E89;
+font-family: 'Yantramanav', sans-serif;
+font-size: 50px;
+font-weight: 400;
+margin: 0;
+text-align: center;
+}
+
+h2 {
+color: #AAA;
+font-family: 'Yantramanav', sans-serif;
+font-size: 16px;
+font-weight: 100;
+letter-spacing: 2px;
+margin: 0;
+text-align: center;
+text-transform: uppercase;
+}
+
+p {
+color: #333;
+font-family: 'Yantramanav', sans-serif;
+font-size: 16px;
+font-weight: 100;
+margin: 0;
+text-align: center;
+}
+
+.actions {
+text-align: center;
+margin-top: 30px;
+}
+
+.actions a {
+background-color: #9DD1F1;
+border-radius: 3px;
+color: #004E89;
+font-family: 'Yantramanav', sans-serif;
+font-size: 16px;
+font-weight: 300;
+display: inline-block;
+margin: 10px;
+padding: 12px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+#gameboard {
+position: relative;
+text-align: center;
+top: 30px;
+}
+
+.card {
+
+border: 2px solid #9DD1F1;
+display: inline-block;
+height: 200px;
+margin-top: 4px;
+padding: 30px auto;
+text-align: center;
+width: 215px;
+}
+
+.card:hover {
+background-color: #004E89;
+border-color: #004E89;
+}
+
+.card img {
+padding-top: 40px;
+}
+*/
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Let's Test Your Memory!</title>
+<link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h2>Classic Memory Game</h2>
+<h1>Let's Test Your Memory!</h1>
+<p>Click on a tile below to reveal a symbol. Click on another tile to try and reveal two of the same symbols. The game is over when all the cards have been matched.</p>
+
+<div class="actions">
+  <a href="#">Reset Game</a>
+  <a href="#">Invite a Friend!</a>
+  <a href="#">Save This Game</a>
+</div>
+
+<div id="gameboard">
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+</div>
+
+</body>
+</html>
+
+2. Box Model: content-box
+
+width + padding = actual rendered width of an element
+
+3. Box Model: Border-box
+
+<h1>Hello World</h1>
+* {
+box-sizing: border-box;
+}
+
+h1 {
+border: 1px solid black;
+height: 200px;
+width: 300px;
+padding: 10px;
+}
+
+4. The New Box Model
+* {
+box-sizing: border-box;
+}
+
+
+
+5. Review: Changing the Box Model
+
+* {
+box-sizing: border-box;
+}
+body {
+background-color: #FFF;
+margin: 0px;
+padding: 50px 60px;
+}
+
+h1 {
+color: #004E89;
+font-family: 'Yantramanav', sans-serif;
+font-size: 50px;
+font-weight: 400;
+margin: 0;
+text-align: center;
+}
+
+h2 {
+color: #AAA;
+font-family: 'Yantramanav', sans-serif;
+font-size: 16px;
+font-weight: 100;
+letter-spacing: 2px;
+margin: 0;
+text-align: center;
+text-transform: uppercase;
+}
+
+p {
+color: #333;
+font-family: 'Yantramanav', sans-serif;
+font-size: 16px;
+font-weight: 100;
+margin: 0;
+text-align: center;
+}
+
+.actions {
+text-align: center;
+margin-top: 30px;
+}
+
+.actions a {
+background-color: #9DD1F1;
+border-radius: 3px;
+color: #004E89;
+font-family: 'Yantramanav', sans-serif;
+font-size: 16px;
+font-weight: 300;
+display: inline-block;
+margin: 10px;
+padding: 12px;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+#gameboard {
+position: relative;
+text-align: center;
+top: 30px;
+}
+
+.card {
+
+border: 2px solid #9DD1F1;
+display: inline-block;
+height: 200px;
+margin-top: 4px;
+padding: 30px auto;
+text-align: center;
+width: 215px;
+}
+
+.card:hover {
+background-color: #004E89;
+border-color: #004E89;
+}
+
+.card img {
+padding-top: 40px;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Let's Test Your Memory!</title>
+<link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h2>Classic Memory Game</h2>
+<h1>Let's Test Your Memory!</h1>
+<p>Click on a tile below to reveal a symbol. Click on another tile to try and reveal two of the same symbols. The game is over when all the cards have been matched.</p>
+
+<div class="actions">
+  <a href="#">Reset Game</a>
+  <a href="#">Invite a Friend!</a>
+  <a href="#">Save This Game</a>
+</div>
+
+<div id="gameboard">
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+
+  <div class="card">
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_star.png">
+  </div>
+</div>
+
+</body>
+</html>
