@@ -8,8 +8,7 @@
 
 ### Web Development: 
 
-* HTML & CSS Part One 
-* HTML & CSS Part Two 
+* [HTML & CSS](https://github.com/malevolentninja/Codeacademy/tree/master/HTML_and_CSS) Completed
 * [SASS](https://github.com/malevolentninja/Codeacademy/tree/master/Sass)
 * [jQuery](https://github.com/malevolentninja/Codeacademy/tree/master/JQuery) 
 * [Javascript](https://github.com/malevolentninja/Codeacademy/tree/master/Javascript) 
@@ -34,9 +33,9 @@
 * [SQL:Analyzing Business Metrics](https://github.com/malevolentninja/Codeacademy/tree/master/SQL/SQL-Analyzing-Business-Metrics)
 
 ### APIs: 
-* Foundation of JavaScript with APIs
-* YouTube API - Searching for YouTube videos
-* Mandrill APIou're getting the most out of your transactional emails'
+* [Foundation of JavaScript with APIs](https://github.com/malevolentninja/Codeacademy/blob/master/API/Foundation_JavaScript_APIs.js) Complete
+* [YouTube API: Searching for YouTube videos](https://github.com/malevolentninja/Codeacademy/blob/master/API/YouTube_Data_API.js)
+* [Mandrill API: getting the most out of your transactional emails]
 * SoundCloud API
 * Foundation of Ruby with APIs
 * Twitter API 
@@ -46,10 +45,10 @@
 * NPR (National Public Radio) API 
 
 
-
 ### Tools: 
 
 • [Git](https://github.com/malevolentninja/Codeacademy/tree/master/Learn_Git) 
+
 • Command Line 
 
 ## Projects: 
