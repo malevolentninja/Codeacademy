@@ -1,0 +1,142 @@
+
+ index.html 
+ <link rel="stylesheet" type="text/css" href="main.css">
+
+<div id="notecards">
+  <div class="notecard">
+    <div class="front">
+      <span class="word">Titanosaur</span>
+    </div>
+    <div class="back">
+      <div class="definition">
+        122 ft, 70 tons, Herbivore, Patagonia about 100 to 95 million years ago
+        <div class="photo"></div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+ 
+main.scss
+@mixin stripes($direction, $width-percent, $stripe-color, $stripe-background: #FFF) {
+  background: repeating-linear-gradient(
+    $direction,
+    $stripe-background,
+    $stripe-background ($width-percent - 1),
+    $stripe-color 1%,
+    $stripe-background $width-percent
+  );
+}
+
+@mixin transform($transformation) {
+  transform: $transformation;
+  -webkit-transform: $transformation;
+  -moz-transform: $transformation;
+  -ms-transform: $transformation;
+  -o-transform: $transformation;  
+}
+
+@mixin photo-content {
+  object-fit: cover;
+}
+
+//Add your own mixins here
+
+.notecard {
+  width: 300px;
+  height: 180px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 20px;
+  font-family: Roboto, sans-serif;
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,.2);
+  
+  .front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .front {
+  z-index: 3;
+  font-size: 20px;
+
+    .word {
+      display: block;
+      text-align: center;
+      position: relative;
+      top: 40%;
+    }    
+  }
+  
+  
+  .back {
+  z-index: 1;
+  word-wrap: break-word;
+  line-height: 1.6;
+    
+    .definition {
+      width: 100%;
+      height: 100%;
+            
+      .photo {
+        width: 60%;
+        margin: 0px auto;
+          
+      }
+    }
+  }
+}
+
+main.css
+
+.notecard {
+  width: 300px;
+  height: 180px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 20px;
+  font-family: Roboto, sans-serif;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2); }
+  .notecard .front, .notecard .back {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  .notecard .front {
+    z-index: 3;
+    font-size: 20px; }
+    .notecard .front .word {
+      display: block;
+      text-align: center;
+      position: relative;
+      top: 40%; }
+  .notecard .back {
+    z-index: 1;
+    word-wrap: break-word;
+    line-height: 1.6; }
+    .notecard .back .definition {
+      width: 100%;
+      height: 100%; }
+      .notecard .back .definition .photo {
+        width: 60%;
+        margin: 0px auto; }
+
+1. The & Selector in Nesting
+
+
+
+2. What is a Mixin? 
+
+3. Mixins: Argument
+
+4. Default Value Arguments 
+
+5. Mixin Facts 
+
+6. List Arguments
+
+7. String Interpolation 
+
+8. The & Selector in Mixins
+
+9. Generalizations
