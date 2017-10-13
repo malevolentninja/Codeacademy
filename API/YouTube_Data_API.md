@@ -4,8 +4,9 @@
 
 2. Loading the JavaScript Client Library
 
-// Search. html 
-/* 
+Search. html 
+
+```sh
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,12 +17,13 @@
         <pre id="response"></pre>
     </body>
 </html>
-*/
+```
 
-/* Search.js
-// Your use of the YouTube API must comply with the Terms of Service:
-// https://developers.google.com/youtube/terms
+Search.js
+Your use of the YouTube API must comply with the Terms of Service:
+ https://developers.google.com/youtube/terms
 
+```sh
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
@@ -42,14 +44,15 @@ function onYouTubeApiLoad() {
     // Add code here to test out showResponse():
    showResponse("Hooray!");
 }
-*/
+```
 
 
 3. A basic search.list()
 
-// Your use of the YouTube API must comply with the Terms of Service:
-// https://developers.google.com/youtube/terms
+Your use of the YouTube API must comply with the Terms of Service:
+https://developers.google.com/youtube/terms
 
+```sh
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
@@ -85,13 +88,14 @@ function search() {
 function onSearchResponse(response) {
     showResponse(response);  
 }
-
+```
 
 4. Getting more info with part=snippet
  
-// Your use of the YouTube API must comply with the Terms of Service:
-// https://developers.google.com/youtube/terms
+ Your use of the YouTube API must comply with the Terms of Service:
+ https://developers.google.com/youtube/terms
 
+```sh
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
@@ -127,12 +131,13 @@ function search() {
 function onSearchResponse(response) {
     showResponse(response);
 }
-
+```
 
 5. Filtering responses with the 'q' parameter
-// Your use of the YouTube API must comply with the Terms of Service:
-// https://developers.google.com/youtube/terms
+ Your use of the YouTube API must comply with the Terms of Service:
+ https://developers.google.com/youtube/terms
 
+```sh
 // Helper function to display JavaScript value on HTML page.
 function showResponse(response) {
     var responseString = JSON.stringify(response, '', 2);
@@ -169,7 +174,7 @@ function search() {
 function onSearchResponse(response) {
     showResponse(response);
 }
-
+```
 
 6. Wrapping up
 
