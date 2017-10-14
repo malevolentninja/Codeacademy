@@ -33,7 +33,7 @@ m.users.ping(function(res) {
 ### 3.  Send a text email
 
 // add API key 
-
+```sh
 // Create a function to log the response from the Mandrill API
 function log(obj) {
     $('#response').text(JSON.stringify(obj));
@@ -61,14 +61,15 @@ function sendTheMail() {
         log(err);
     });
 }
-
-/*For the official Mandrill API wrappers, API calls follow the documented methods. 
+```
+For the official Mandrill API wrappers, API calls follow the documented methods. 
 So, for example, to ping the account, you can call the users.ping method. 
 Likewise, to send a message, you'd use messages.send. 
 Change line 22 to call the messages.send method on the variable m 
-which is an instance of the Mandrill class to be able to send the message. */
+which is an instance of the Mandrill class to be able to send the message.
 
 ### 4. Send an HTML email with open and click tracking
+```sh
 // Create a function to log the response from the Mandrill API
 function log(obj) {
     $('#response').text(JSON.stringify(obj));
@@ -99,7 +100,7 @@ m.messages.send(params); }
         log(err);
     });
 }
-
+```
 ### 5. Customize your email content
 
 ### 6. Providing Dynmaic Values in your API
