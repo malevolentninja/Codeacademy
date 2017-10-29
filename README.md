@@ -11,7 +11,10 @@
 * [HTML & CSS](https://github.com/malevolentninja/Codeacademy/tree/master/HTML_and_CSS) Completed
 * [SASS](https://github.com/malevolentninja/Codeacademy/tree/master/Sass)
 * [jQuery](https://github.com/malevolentninja/Codeacademy/tree/master/JQuery) 
-* [Javascript](https://github.com/malevolentninja/Codeacademy/tree/master/Javascript) 
+* [Javascript:](https://github.com/malevolentninja/Codeacademy/tree/master/Javascript)
+   * [Teach Yourself JavaScript- OLDEST](https://github.com/malevolentninja/Codeacademy/tree/master/Javascript/Teach_Yourself_JavaScript)
+   * [JS older July 2017](https://github.com/malevolentninja/Codeacademy/tree/master/Javascript/Intro_to_Js_July_2017)
+   * [JS New October 2017](https://github.com/malevolentninja/Codeacademy/tree/master/Javascript/Intro_to_js_NEWOCT2017)
 * Learn ReactJs: Part I
 * Learn ReactJS: Part II
 * Learn AngularJS 1.X
