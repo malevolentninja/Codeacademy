@@ -1,17 +1,24 @@
-1. We have come a long , long...
+# Unit Seven: Part One - Introduction to Objects I
+
+
+### 1. We have come a long , long...
+```sh
 (((3 * 90) === 270) || !(false && (!false)) || "bex".toUpperCase() === "BEX"); 
 answer = true; 
-2. Through the hard times...
+```
 
+### 2. Through the hard times...
+```sh
 // Here is an array of multiples of 8. But is it correct?
 var multiplesOfEight = [8,16,24,32,40,58];
 
 // Test to see if a number from the array is NOT a true
 // multiple of eight. Real multiples will return false.
 var answer = multiplesOfEight[6] % 8 !== 0;
+```
 
-3....And the good!
-  
+### 3....And the good!
+ ```sh 
   for(var counter = 1;counter<21;counter++){
     if(counter%5===0&&counter%3===0){
         console.log("FizzBuzz");
@@ -29,9 +36,10 @@ var answer = multiplesOfEight[6] % 8 !== 0;
     }
     }
 }
-  
-4. I have to celebrate you baby. 
-
+  ```
+ 
+### 4. I have to celebrate you baby. 
+```sh
 var getReview = function (movie){
     switch(movie) {
         case "Toy Story 2":
@@ -47,18 +55,19 @@ var getReview = function (movie){
             console.log("I don't know!");
     }
 }
+```
 
-
-5. I have to praise
-
+### 5. I have to praise
+```sh
 console.log("I'm ready for Objects!");
-
-6. Intro
-
+```
+###6. Intro
+```sh
 var bob = new Object()
+```
 
-7. Properties 
-
+### 7. Properties 
+```sh
 var Spencer = {
   age: 22,
   country: "United States"
@@ -69,9 +78,9 @@ var me = {
   age: 22,
   country: "United Kingdom"
 };
-
-8. Accessing Properties 
-
+```
+### 8. Accessing Properties 
+```sh
 var bob = {
   name: "Bob Smith",
   age: 30
@@ -86,9 +95,10 @@ var age1 = bob.age;
 // finish this code by saving Susan's information
 var name2 = susan.name
 var age2 = susan.age
+```
 
-9. Accessing properties, Part 2
-
+### 9. Accessing properties, Part 2
+```sh
 // Take a look at our next example object, a dog
 var dog = {
   species: "greyhound",
@@ -100,9 +110,10 @@ var species = dog["species"];
 // fill in the code to save the weight and age using bracket notation
 var weight = dog["weight"];
 var age = dog["age"];
+```
 
-10. Another Way to Create 
-
+### 10. Another Way to Create 
+```sh
 var bob = new Object();
 bob.name = "Bob Smith";
 bob.age = 30;
@@ -115,9 +126,10 @@ var susan1 = {
 var susan2 = new Object();
 susan2.name = "Susan Jordan";
 susan2.age = 24;
+```
 
-11. Putting it all together 
-
+### 11. Putting it all together 
+```sh
 var snoopy = {
     species: "beagle",
     age: 10
@@ -125,16 +137,18 @@ var snoopy = {
 var buddy = new Object();
 buddy.species = "golden retriever";
 buddy.age = 5;
+```
 
-12. More practice Making objects
-
+### 12. More practice Making objects
+```sh
 var bicycle = new Object();
 bicycle.speed = 0;
 bicycle.gear = 1;
 bicycle.frame_material = "carbon fiber";
+```
 
-13. Function Review 
-
+### 13. Function Review 
+```sh
 // Accepts a number x as input and returns its square
 var square = function (x) {
   return x * x;
@@ -146,9 +160,10 @@ var multiply = function (x,y) {
     return x*y;
 };
 multiply(15,10);
+```
 
-14. So What is A method? 
-  
+### 14. So What is A method? 
+  ```sh
   // here is bob again, with his usual properties
 var bob = new Object();
 bob.name = "Bob Smith";
@@ -161,10 +176,10 @@ bob.setAge = function (newAge){
 bob.setAge(40);
 // bob's feeling old.  Use our method to set bob's age to 20
 bob.setAge(20);
+```
 
-
-15. Why are Methods Important? 
-
+### 15. Why are Methods Important? 
+```sh
   var bob = new Object();
 bob.age = 17;
 // this time we have added a method, setAge
@@ -176,9 +191,10 @@ bob.getYearOfBirth = function () {
   return 2014 - bob.age;
 };
 console.log(bob.getYearOfBirth());
-  
-16. The "this" Keyword
+ ```
 
+### 16. The "this" Keyword
+```sh
 // here we define our method using "this", before we even introduce bob
 var setAge = function (newAge) {
   this.age = newAge;
@@ -191,9 +207,10 @@ bob.setAge = setAge;
 
 // change bob's age to 50 here
 bob.setAge(50);
+```
 
-17. "This" Works for everyone
-
+### 17. "This" Works for everyone
+```sh
 // here we define our method using "this", before we even introduce bob
 var setAge = function (newAge) {
   this.age = newAge;
@@ -210,9 +227,10 @@ susan.setAge = setAge;
 
 // here, update Susan's age to 35 using the method
 susan.setAge(35);
+```
 
-18. Make your own method 
-
+### 18. Make your own method 
+```sh
 var rectangle = new Object();
 rectangle.height = 3;
 rectangle.width = 4;
@@ -227,9 +245,10 @@ rectangle.setWidth = function (newWidth){
 rectangle.setWidth(8);
 rectangle.setHeight(6);
 // here change the width to 8 and height to 6 using our new methods
+```
 
-19. More kinds of methods 
-
+### 19. More kinds of methods 
+```sh
 var square = new Object();
 square.sideLength = 6;
 square.calcPerimeter = function() {
@@ -248,9 +267,10 @@ var bob = new Object();
 bob.name = "Bob Smith";
 bob.age = 20;
 // add bob's age here and set it equal to 20
+```
 
-21. Custom Constructors 
-
+### 21. Custom Constructors 
+```sh
 function Person(name,age) {
   this.name = name;
   this.age = age;
@@ -260,10 +280,10 @@ function Person(name,age) {
 var bob = new Person("Bob Smith", 30);
 var susan = new Person("Susan Jordan", 25);
 var george = new Person("George Washington", 275);
+```
 
-
-22. Try it out! 
-
+### 22. Try it out! 
+```sh
   function Cat(age, color) {
   this.age = age;
   this.color = color;
@@ -275,10 +295,10 @@ function Dog(age, breed, color) {
  this.breed = breed;
  this.color = color;
 }
-
+```
   
-23. More Options
-
+### 23. More Options
+```sh
 function Person(name,age) {
   this.name = name;
   this.age = age;
@@ -289,9 +309,10 @@ var sally = new Person("Sally Bowles", 39);
 var holden = new Person("Holden Caulfield", 16);
 console.log("sally's species is " + sally.species + " and she is " + sally.age);
 console.log("holden's species is " + holden.species + " and he is " + holden.age);
+```
 
-24. Constructors with methods
-
+### 24. Constructors with methods
+```sh
 function Rectangle(height, width) {
   this.height = height;
   this.width = width;
@@ -307,9 +328,10 @@ function Rectangle(height, width) {
 var rex = new Rectangle(7,3);
 var area = rex.calcArea();
 var perimeter = rex.calcPerimeter();
+```
 
-25. Constructors in Review 
-
+### 25. Constructors in Review 
+```sh
 function Rabbit(adjective) {
     this.adjective = adjective;
     this.describeMyself = function() {
@@ -320,9 +342,10 @@ function Rabbit(adjective) {
 var rabbit1 = new Rabbit("fluffy");
 var rabbit2 = new Rabbit("happy");
 var rabbit3 = new Rabbit("sleepy");
+```
 
-26. Arrays of objects 
-
+### 26. Arrays of objects 
+```sh
 // Our person constructor
 function Person (name, age) {
     this.name = name;
@@ -336,9 +359,10 @@ family[1] = new Person("bob", 42);
 family[2] = new Person("michelle", 8);
 family[3] = new Person("timmy", 6);
 // add the last family member, "timmy", who is 6 years old
+```
 
-27. Loop the Loop
-
+### 27. Loop the Loop
+```sh
 //Person Constructor
 function Person(name,age) {
     this.name = name;
@@ -354,9 +378,10 @@ family[3] = new Person("timmy",6);
 for(i=0;i<4;i++) {
     console.log(family[i].name)
 }
+```
 
-28. Passing Objects into Functions
-
+### 28. Passing Objects into Functions
+```sh
 // Our person constructor
 function Person (name, age) {
     this.name = name;
@@ -374,9 +399,10 @@ var billy = new Person("Billy", 25);
 
 // get the difference in age between alice and billy using our function
 var diff = ageDifference(alice,billy);
+```
 
-29. Try it out!
-
+### 29. Try it out!
+```sh
   // Our person constructor
 function Person (name, age) {
     this.name = name;
@@ -403,9 +429,10 @@ var alice = new Person("Alice", 30);
 var billy = new Person("Billy", 25);
 
 console.log("The older person is " + olderAge(alice, billy));
-  
-30. What are Objects For?
+```
 
+### 30. What are Objects For?
+```sh
   var spencer = {
   age: 22,
   country: "United States"
@@ -413,10 +440,10 @@ console.log("The older person is " + olderAge(alice, billy));
 var spencer2 = new Object();
 spencer2.age = 22;
 spencer2.country = "United States";
-
+```
   
-31. Properties
-
+### 31. Properties
+```sh
 var snoopy = new Object();
 snoopy.species = "beagle";
 snoopy.age = 10;
@@ -426,9 +453,10 @@ snoopy.age = 10;
 var species = snoopy.species = "beagle";
 // use bracket notation for snoopy's age
 var age = snoopy["age"] = 10;
+```
 
-32. Customizing constructors
-
+### 32. Customizing constructors
+```sh
  // 3 lines required to make harry_potter
 var harry_potter = new Object();
 harry_potter.pages = 350;
@@ -442,9 +470,10 @@ function Book (pages, author) {
 
 // Use our new constructor to make the_hobbit in one line
 var the_hobbit = new Book(320,"J.R.R. Tolkien");
+```
 
-33. Methods
-
+### 33. Methods
+```sh
 function Circle (radius) {
     this.radius = radius;
     this.area = function () {
@@ -456,3 +485,4 @@ function Circle (radius) {
     };
 
 };
+```
