@@ -1,7 +1,7 @@
 # Unit Seven: Part One - Introduction to Objects I
 
 
-### 1. We have come a long , long...
+### 1. We have come a long , long...
 ```sh
 (((3 * 90) === 270) || !(false && (!false)) || "bex".toUpperCase() === "BEX"); 
 answer = true; 
@@ -17,7 +17,7 @@ var multiplesOfEight = [8,16,24,32,40,58];
 var answer = multiplesOfEight[6] % 8 !== 0;
 ```
 
-### 3....And the good!
+### 3....And the good!
  ```sh 
   for(var counter = 1;counter<21;counter++){
     if(counter%5===0&&counter%3===0){
@@ -61,7 +61,7 @@ var getReview = function (movie){
 ```sh
 console.log("I'm ready for Objects!");
 ```
-###6. Intro
+### 6. Intro
 ```sh
 var bob = new Object()
 ```
@@ -79,7 +79,7 @@ var me = {
   country: "United Kingdom"
 };
 ```
-### 8. Accessing Properties 
+### 8. Accessing Properties 
 ```sh
 var bob = {
   name: "Bob Smith",
@@ -229,7 +229,7 @@ susan.setAge = setAge;
 susan.setAge(35);
 ```
 
-### 18. Make your own method 
+### 18. Make your own method 
 ```sh
 var rectangle = new Object();
 rectangle.height = 3;
@@ -344,7 +344,7 @@ var rabbit2 = new Rabbit("happy");
 var rabbit3 = new Rabbit("sleepy");
 ```
 
-### 26. Arrays of objects 
+### 26. Arrays of objects 
 ```sh
 // Our person constructor
 function Person (name, age) {
