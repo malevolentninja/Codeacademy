@@ -1,5 +1,7 @@
-1. If/Else
+# Unit Five: Part One - More On Control
 
+### 1. If/Else
+```sh
 var isEven = function(number) {
 if (number % 2 === 0){
 return(true);
@@ -11,9 +13,10 @@ return(false);
 };
 
 isEven(3);
+```
 
-2. If / Else of / Else
-
+### 2. If / Else of / Else
+```sh
 var isEven = function(number) {
 if (number % 2 === 0){
 return(true);
@@ -28,9 +31,10 @@ return(false);
 };
 
 isEven(3);
+```
 
-3. For or While
-
+### 3. For or While
+```sh
 // Write your loop below!
 
 var count = 2
@@ -38,9 +42,10 @@ var count = 2
     console.log("while again!");
     count++;
 }
+```
 
-4. Sneak Preview: the switch statement
-
+### 4. Sneak Preview: the switch statement
+```sh
 var lunch = prompt("What do you want for lunch?","Type your lunch choice here");
 
 switch(lunch){
@@ -59,9 +64,10 @@ switch(lunch){
   default:
     console.log("Huh! I'm not sure what " + lunch + " is. How does a sandwich sound?");
 }
+```
 
-5. Adding to an existing switch 
-
+### 5. Adding to an existing switch 
+```sh
 var color = prompt("What's your favorite primary color?","Type your favorite color here");
 
 switch(color) {
@@ -77,9 +83,10 @@ switch(color) {
   default:
     console.log("It think that's a primary color!");
 }
+```
 
-6. Practice with Switch 
-
+### 6. Practice with Switch 
+```sh
 var candy = prompt("What's your favorite candy?","Type your favorite candy here.");
 
 switch(candy) {
@@ -96,9 +103,10 @@ switch(candy) {
     console.log("We don't have this one");
   
 }
+```
 
-7. More Practice with Switch 
-
+### 7. More Practice with Switch 
+```sh
 var answer = prompt("Which is your favorite city?");
 
 switch(answer) {
@@ -114,9 +122,10 @@ switch(answer) {
   default:
     console.log("Oops in this list!");
 }
+```
 
-8. All on your own 
-
+### 8. All on your own 
+```sh
 // Write your code below!
 
 var flower = prompt("Which flower do you love?");
@@ -134,16 +143,15 @@ switch(flower) {
     default:
         console.log("Never heard of this one.");
 }
+```
 
+### 9. Mid Lesson Breather 
 
-9. Mid Lesson Breather 
 // Nothing to write
 
+### 10. Overview 
 
-10. Overview 
-
-// Complete lines 3 and 4!
-
+```sh
 var iLoveJavaScript = true;
 var iLoveLearning = true ;
 
@@ -156,8 +164,11 @@ if(iLoveJavaScript && iLoveLearning) {
 } else {
   console.log("You only like one but not the other? We'll work on it.");
 }
+```
 
-11. And 
+### 11. And
+
+```sh
 // Declare your variables here!
 var hungry = true;
 var foodHere = true;
@@ -170,9 +181,10 @@ var eat = function() {
         return false;
     }
 };
+```
 
-
-12. Or
+### 12. Or
+```sh
 // Declare your variables here!
 var bored = true;
 var tired = false; 
@@ -185,10 +197,10 @@ var nap = function() {
         return false;
     }
 };
+```
 
-
-13. Not
-
+### 13. Not
+```sh
 // Declare your variables here!
 var programming = !true;
 
@@ -201,7 +213,8 @@ if (programming === false) {
         return false;
     }
 };
+```
 
-14. Review 
+### 14. Review 
 
 //Nothing to write
