@@ -44,7 +44,7 @@ james.speak("great");
 james.speak("just okay");
 ```
 ### 4. Can I see Your References?
-    ```sh
+```sh
 var james = {
     job: "programmer",
     married: false,
