@@ -1,5 +1,7 @@
-1. Introduction
+# Unit Two: Part One - Introduction to Functions 
 
+### 1. Introduction
+```sh
 var speed = 65;
 if (speed > 80) 
 {
@@ -9,9 +11,10 @@ else
 {
     console.log("Drive safe")
 }
+```
 
-2. Introducting Functions
-
+### 2. Introducting Functions
+```sh
 // This is what a function looks like:
 
 var divideByThree = function (number) {
@@ -24,9 +27,10 @@ var divideByThree = function (number) {
 // We tell the computer what the number input is (i.e. 6)
 // The computer then runs the code inside the function!
 divideByThree(8);
+```
 
-3. Function Syntax
-
+### 3. Function Syntax
+```sh
 // Below is the greeting function!
 // See line 7
 // We can join strings together using the plus sign (+)
@@ -37,18 +41,18 @@ var greeting = function (name) {
 };
 
 greeting("John");
+```
 
-
-4. How does a function work?
-
+### 4. How does a function work?
+```sh
 var foodDemand = function(food) {
     console.log("I want to eat "+ food);
 }
 foodDemand("Pizza");
+```
 
-
-5. Tying it all together
-
+### 5. Tying it all together
+```sh
 // Nicely written function:
 var calculate = function (number) 
 {
@@ -61,19 +65,20 @@ var greeting = function(name)
     console.log(name)
 };
 greeting("John");
+```
 
-
-6. Dont Repeat Yourself
-
+### 6. Dont Repeat Yourself
+```
 var orangeCost = function(cost)
 {
     var costOrange = cost*5;
     console.log(costOrange);
 };
 orangeCost(5)
+```
 
-7. Return Keyword
-
+### 7. Return Keyword
+```
 // Parameter is a number, and we do math with that parameter
 var timesTwo = function(number) {
     return number * 2;
@@ -82,10 +87,10 @@ var timesTwo = function(number) {
 
 var newNumber = timesTwo(10000);
 console.log(newNumber);
+```
 
-
-8. Function, return and if/else
-
+### 8. Function, return and if/else
+```sh
 var quarter = function(number)
 {
     return number/4;
@@ -96,19 +101,19 @@ if (quarter(12) % 3 === 0 ) {
 } else {
   console.log("The statement is false");
 }
+```
 
-
-9. Functions with two parameters
-
+### 9. Functions with two parameters
+```sh
 var perimeterBox = function(length, width)
 {
     return length*2+width*2;    
 }
 perimeterBox(5,5)
+```
 
-
-10. Global vs Local Variables
-
+### 10. Global vs Local Variables
+```sh
 var my_number = 7; //this has global scope
 
 var timesTwo = function(number) {
@@ -121,17 +126,19 @@ timesTwo(7);
 
 console.log("Outside the function my_number is: ")
 console.log(my_number);
+```
 
-11. Functions recap
-
+### 11. Functions recap
+```sh
 var nameString = function (name) {
     return "Hi, I am " + name;
 };
 nameString("John");
 console.log(nameString);
+```
 
-12. Functions & if/else
-
+### 12. Functions & if/else
+```sh
 var sleepCheck = function(numHours)
 {
     if(numHours >= 8)
@@ -146,7 +153,8 @@ var sleepCheck = function(numHours)
 sleepCheck(10);
 sleepCheck(5);
 sleepCheck(8);
+```
 
-13.
+### 13. Review
 
 //No code necessary
