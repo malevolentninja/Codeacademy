@@ -1,5 +1,7 @@
-//1. An Objective Review 
+# Unit Eight: Part One - Introduction to Objects II
 
+### 1. An Objective Review 
+```sh
 var james = {
     job: "programmer",
     married: false
@@ -11,10 +13,10 @@ function Person(job, married) {
 }
 
 var gabby = new Person("student",true);
+```
 
-
-//2. Fun with Functions
-
+### 2. Fun with Functions
+```sh
 function Person(job, married) {
     this.job = job;
     this.married = married;
@@ -27,9 +29,9 @@ function Person(job, married) {
 
 var user = new Person("Codecademy Student",false);
 user.speak();
-
-//3. Literally Speaking 
-
+```
+### 3. Literally Speaking 
+```sh
 var james = {
     job: "programmer",
     married: false,
@@ -40,9 +42,9 @@ var james = {
 };
 james.speak("great");
 james.speak("just okay");
-
-//4. Can I see Your References?
-    
+```
+### 4. Can I see Your References?
+    ```sh
 var james = {
     job: "programmer",
     married: false,
@@ -59,9 +61,9 @@ james.job = "super programmer";
 
 // james' second job
 james.sayJob();
-
-//5. Who's in Your Bracket?
-
+```
+### 5. Who's in Your Bracket?
+```sh
 var james = {
     job: "programmer",
     married: false
@@ -84,9 +86,10 @@ var aString = "I'm a string!";
 console.log(typeof anObj); // should print "object"
 console.log(typeof aNumber); // should print "number"
 console.log(typeof aString); // should print "string"
+```
 
-//7. Know Thyself
-
+### 7. Know Thyself
+```sh
 var myObj = {
     name:"John"
     
@@ -94,9 +97,10 @@ var myObj = {
 
 console.log( myObj.hasOwnProperty('name') ); // should print true
 console.log( myObj.hasOwnProperty('nickname') ); // should print false
+```
 
-// 8. Dressed to Impress
-
+### 8. Dressed to Impress
+``sh
 var suitcase = {
     shirt: "Hawaiian"
 };
@@ -105,9 +109,9 @@ if(suitcase.hasOwnProperty('shorts')) {
 } else {
     suitcase.shorts = "red";
 }
-
-//9. Getting IN-timate
-
+```
+### 9. Getting IN-timate
+```sh
 var nyc = {
     fullName: "New York City",
     mayor: "Bill de Blasio",
@@ -117,9 +121,10 @@ var nyc = {
 for(var property in nyc) {
     console.log(property)
 }
+```
 
-//10. List ALL the properties
-
+### 10. List ALL the properties
+```sh
 var nyc = {
     fullName: "New York City",
     mayor: "Bill de Blasio",
@@ -129,9 +134,10 @@ var nyc = {
 for(var x in nyc){
     console.log(nyc[x]);
 }
+```
 
-// 11. Class is in Session 
-
+###  11. Class is in Session 
+```sh
 function Person(name,age) {
   this.name = name;
   this.age = age;
@@ -145,9 +151,9 @@ var susan = new Person("Susan Jordan", 35);
 function Circle(radius) {
     this.radius = radius;
 }
-
-//12. 
-
+```
+### 12. 
+```sh
 function Dog (breed) {
   this.breed = breed;
 }
@@ -165,9 +171,10 @@ snoopy.bark = function() {
   console.log("Hello");
 };
 snoopy.bark();
+```
 
-//13. 
-
+### 13. 
+```sh
 function Person(name,age) {
   this.name = name;
   this.age = age;
@@ -182,8 +189,10 @@ printPersonName(bob);
 
 var me = new Person("John Gaidimas", 150);
 printPersonName(me);
+```
 
-//14. 
+### 14. 
+```sh
 function Dog (breed) {
   this.breed = breed;
 };
@@ -199,9 +208,9 @@ buddy.bark();
 var snoopy = new Dog("Beagle");
 /// this time it works!
 snoopy.bark();
-
-//15. 
-
+```
+### 15. 
+```sh
 function Cat(name, breed) {
     this.name = name;
     this.breed = breed;
@@ -215,9 +224,9 @@ Cat.prototype.meow = function() {
     console.log("Meow!");
 }
 gary.meow()
-
-//16. 
-
+```
+### 16. 
+```sh
 function Animal(name,numLegs) {
     this.name = name;
     this.numLegs= numLegs;
@@ -229,9 +238,10 @@ Animal.prototype.sayName = function() {
 // provided code to test above constructor and method
 var penguin = new Animal("Captain Cook", 2);
 penguin.sayName();
+```
 
-//17. 
-
+### 17. 
+```sh
 function Animal(name,numLegs) {
     this.name = name;
     this.numLegs= numLegs;
@@ -243,9 +253,9 @@ Animal.prototype.sayName = function() {
 // provided code to test above constructor and method
 var penguin = new Animal("Captain Cook", 2);
 penguin.sayName();
-
-//18. 
-
+```
+### 18. 
+```sh
 function Animal(name, numLegs) {
     this.name = name;
     this.numLegs = numLegs;
@@ -269,9 +279,9 @@ Penguin.prototype.sayName = function() {
 // our test code
 var theCaptain = new Penguin("Captain Cook", 2);
 theCaptain.sayName();
-
-//19. 
-
+```
+### 19. 
+```sh
 
 // the original Animal class and sayName method
 function Animal(name, numLegs) {
@@ -290,9 +300,9 @@ function Penguin(name) {
 Penguin.prototype = new Animal();
 // set its prototype to be a new instance of Animal
 
-
-//19. 
-
+```
+### 19. 
+```sh
 // the original Animal class and sayName method
 function Animal(name, numLegs) {
     this.name = name;
@@ -312,9 +322,9 @@ Penguin.prototype = new Animal();
 
 var penguin = new Penguin("Admiral Ackbar");
 penguin.sayName();
-
-// 20. 
-
+```
+### 20. 
+```sh
 function Penguin(name) {
     this.name = name;
     this.numLegs = 2;
@@ -328,9 +338,9 @@ Emperor.prototype = new Penguin();
 // create an "emperor" object and print the number of legs it has
 var emperor = new Emperor("Han Shot First");
 console.log(emperor.numLegs);
-
-//21. 
-
+```
+### 21. 
+```sh
 // original classes
 function Animal(name, numLegs) {
     this.name = name;
@@ -355,9 +365,9 @@ var myEmperor = new Emperor("Jules");
 console.log(myEmperor.saying); // should print "Waddle waddle"
 console.log(myEmperor.numLegs); // should print 2
 console.log(myEmperor.isAlive); // should print true
-
-//22. 
-
+```
+### 22. 
+```sh
 function Person(first,last,age) {
    this.firstName = first;
    this.lastName = last;
@@ -370,9 +380,9 @@ var myLast = john.lastName;
 var myAge = john.age;
 
 //declare variable myAge set to the age of the john object.
-
-//23. 
-
+```
+### 23. 
+```sh
 function Person(first,last,age) {
    this.firstname = first;
    this.lastname = last;
@@ -385,9 +395,9 @@ var john = new Person("John","G",150);
 
 // try to print his bankBalance
 console.log(john.bankBalance)
-
-//24. 
-
+```
+### 24. 
+```sh
 function Person(first,last,age) {
    this.firstname = first;
    this.lastname = last;
@@ -403,9 +413,10 @@ console.log(john.bankBalance);
 
 var myBalance = john.getBalance();
 console.log(myBalance);
+```
 
-
-//25. 
+### 25. 
+```sh
 function Person(first,last,age) {
    this.firstname = first;
    this.lastname = last;
@@ -426,9 +437,9 @@ console.log(john.returnBalance);
 var myBalanceMethod = john.askTeller();
 var myBalance = myBalanceMethod();
 console.log(myBalance);
-
-//26. 
-
+```
+### 26. 
+```sh
 function Person(first,last,age) {
    this.firstname = first;
    this.lastname = last;
@@ -443,9 +454,9 @@ function Person(first,last,age) {
 
 var john = new Person('John','Smith',30);
 var myBalance = john.askTeller(1234);
-
-//27.
-
+```
+### 27.
+```sh
 var languages = {
     english: "Hello!",
     french: "Bonjour!",
@@ -457,9 +468,9 @@ for(var x in languages) {
         console.log(languages[x]);
     }
 };
-
-//28. 
-
+```
+### 28. 
+```sh
 function Dog (breed) {
     this.breed = breed;
 };
@@ -474,9 +485,10 @@ yourDog.sayHello();
 
 var myDog = new Dog("dachshund");
 myDog.sayHello();
+```sh
 
-//29. 
-
+### 29. 
+```sh
 // what is this "Object.prototype" anyway...?
 var prototypeType = typeof Object.prototype;
 console.log(prototypeType);
@@ -484,9 +496,9 @@ console.log(prototypeType);
 // now let's examine it!
 var hasOwn = Object.prototype.hasOwnProperty("hasOwnProperty");
 console.log(hasOwn);
-
-//30.
-
+```
+### 30.
+```sh
 function StudentReport() {
     var grade1 = 4;
     var grade2 = 2;
@@ -505,3 +517,4 @@ for(var x in myStudentReport) {
 }
 
 console.log("Your overall GPA is " + myStudentReport.getGPA());
+```
