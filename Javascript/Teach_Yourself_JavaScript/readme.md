@@ -19,7 +19,7 @@ Pre 2017 change
 
 ## [Responding to Events](https://github.com/malevolentninja/Codeacademy/blob/master/Javascript/Teach_Yourself_JavaScript/responding_to_Events.md)
 
-## [JavaScript and Cookies]()
+## [JavaScript and Cookies](https://github.com/malevolentninja/Codeacademy/blob/master/Javascript/Teach_Yourself_JavaScript/javaScript_and_Cookies.md)
 
 ## [Dealing with DOM]()
 
