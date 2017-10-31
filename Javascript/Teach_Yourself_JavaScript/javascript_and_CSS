@@ -1,0 +1,56 @@
+# JavaScript and CSS
+
+
+### 1. The DOM style property
+
+index.html
+```sh
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript and CSS</title>
+        <script src="css.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>JavaScript and CSS</h1>
+        <div id="content" style="padding:10px;">
+            You can use JavaScript to control CSS for your page.
+        </div>
+        <input type="button" id="btn" value="Click Me" />
+    </body>
+</html>
+```
+
+style.css
+```sh
+body {
+    font-family: arial, helvetica, sans-serif;
+    background-color: #eef;
+}
+
+#content {
+    border: 1px solid black;
+    background-color: #cde;
+    margin: 10px;
+}
+```
+
+
+css.js
+```sh
+function changeCSS() {
+    var pageContent = document.getElementById('content');
+    if(pageContent.style.margin == '10px'){
+        pageContent.style.margin = '20px';
+    } else if(pageContent.style.margin == '20px') {
+        pageContent.style.margin = '10px';
+    }
+}
+
+window.onload = function() {
+    document.getElementById('btn').onclick = changeCSS;
+};
+```
+
+### 2. Using className
