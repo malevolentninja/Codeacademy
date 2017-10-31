@@ -1,4 +1,4 @@
-# Unit Four: Part One - Introduction to While Loops in Javascript
+# Unit Four: Part Two - Introduction to While Loops in Javascript
 
 ### 1. While we are at it
 ```sh
