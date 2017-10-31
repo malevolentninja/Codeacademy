@@ -1,4 +1,5 @@
- 
+# Unit Four: Part One - Introduction to While Loops in Javascript
+
 ### 1. While we are at it
 ```sh
 var coinFace = Math.floor(Math.random() * 2);
